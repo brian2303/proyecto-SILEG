@@ -1,0 +1,12 @@
+body{
+    background-image: url(../img/img-login.jpg);
+}
+
+.container{
+    position: relative;
+}
+
+.container .col-6{
+    position: absolute;
+    margin-top: 10rem;
+}
