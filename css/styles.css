@@ -27,10 +27,6 @@ font-family: 'Caladea', serif;
     .navbar-nav .nav-link{
         color: white !important;
     }
-
-    button, .navbar-toggler{
-        border: 1px solid white !important;
-    }
 /* /Header */
 
 /* Main */
@@ -62,6 +58,25 @@ font-family: 'Caladea', serif;
     }
 
 /* /Main */
+
+/* modal para inicio de sesión */
+    .modal-header{
+        height: 3.5rem;
+        background: linear-gradient(rgb(61, 18, 18),rgb(138, 24, 24),rgb(167, 31, 31));
+        padding-left: 43%;
+        color: white;
+        font-family: 'Oswald', sans-serif;
+    }
+
+    .close-sileg{
+        border: none;
+        background: none;
+    }
+    .btn-login{
+        background: linear-gradient(rgb(61, 18, 18),rgb(138, 24, 24),rgb(167, 31, 31));
+        color:white 
+    }
+/* /modal para inicio de sesión */
 
 /* Footer */
     #footer{

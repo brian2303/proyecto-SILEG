@@ -34,7 +34,7 @@
                 <a class="nav-link font" href="#">Localiza nuestra tienda</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link font d-none d-md-inline-block" href="./inicioSesion.html">Iniciar Sesion</a>
+                <a class="nav-link font d-none d-md-inline-block" data-toggle="modal" data-target="#exampleModalScrollable" href="#">Iniciar Sesion</a>
             </li>
             </ul>
         </div>
@@ -59,7 +59,7 @@
                       <div class="row align-items-center">
                           <div class="col-md-6 offset-md-6  text-center text-md-right">
                               <h1>Licores en casa el gato</h1>
-                              <a href="./inicioSesion.html" class="d-inline-block d-md-none btn btn-outline-warning">Iniciar sesion</a>
+                              <a href="#" class="d-inline-block d-md-none btn btn-outline-warning" data-toggle="modal" data-target="#exampleModalScrollable">Iniciar sesion</a>
                               <p class="d-none d-md-block">Recuerda disfrutar siempre con responsabilidad, en licores en casa el gato contamos con los mejores descuentos y promociones para ti registrate para obtener mas informacion...</p>
                               <a href="#" class="d-inline-block btn btn btn-outline-warning">Registrarme</a>
                           </div>
@@ -70,6 +70,43 @@
         </div>
     </main>
     <!-- /Main -->
+
+    <!-- modal para inicio de sesión -->
+    <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalScrollableTitle">SILEG</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <form>
+                    <div class="form-group">
+                      <label for="formGroupExampleInput">Nombre Usuario</label>
+                      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ingrese correo electronico">
+                    </div>
+                    <div class="form-group">
+                      <label for="formGroupExampleInput2">Contraseña</label>
+                      <input type="password" class="form-control" id="formGroupExampleInput2" placeholder="Ingrese contraseña">
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <a class="btn btn-login btn-block" href="#" role="button">Iniciar sesión</a>
+            <a class="btn btn-login btn-block" href="#" role="button">¿Olvido su contraseña?</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /modal para inicio de sesión -->
 
       <!-- footer -->
       <footer id="footer" class="py-2">
