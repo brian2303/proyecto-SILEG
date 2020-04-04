@@ -11,12 +11,11 @@ body{
 }
 /* estilo de botones */
 .color-botones{
-    background: rgb(156,53,24);
-    background: linear-gradient(170deg, rgba(156,53,24,1) 13%, rgba(249,20,19,1) 50%, rgba(252,69,69,1) 91%); 
+    background: rgba(0,0,0,.1);
     color: white;
     font-family: 'Oswald', sans-serif;
     font-size: 1.2rem;
-    border: 1px solid rgb(175, 45, 45);
+    border: 2px solid rgb(175, 45, 45);
     width: 100%;
     border-radius: 2px;
 }
@@ -29,9 +28,10 @@ body{
     color: white;
 }
 .color-botones:hover{
-    background: rgb(199, 6, 6);
+    background: rgba(0,0,0,.8);
     box-shadow: 2px 2px 2px 1px rgb(80, 3, 3);
 }
+/* estilo de botones } */
 
 /* {contenedor pagina */
 .container{
@@ -52,7 +52,8 @@ body{
     background-image: url(../img/img-menu-izquierda.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    filter: grayscale(.2);
+    background-position: center;
+    filter: grayscale(.5);
 }
 /*menu de navegacion }*/
 
@@ -68,22 +69,19 @@ body{
 .nav-sheets{
     grid-column: 2/4;
     grid-row: 2/3;
-    background-image: url(../img/img-menu-izquierda.jpg);
+    background-color: brown;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    filter: grayscale(.2);
 }
 
 .button-proveedores{
-    width: 50%;
+    width: 49.8%;
 }
 
 .button-compras{
-    width: 50%;
-    background-color: brown;
-    color: white;
-    font-family: 'Oswald', sans-serif;
-    font-size: 1.3rem;
+    width: 49.8%;
 }
 @media (max-width:550px){
     .button-proveedores{

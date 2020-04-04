@@ -1,7 +1,6 @@
 function actualizarHora() {
     var fecha = new Date(),
         horas = fecha.getHours(),
-        ampm,
         minutos = fecha.getMinutes(),
         segundos = fecha.getSeconds();
 
