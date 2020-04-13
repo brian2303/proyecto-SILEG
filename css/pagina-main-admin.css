@@ -1,14 +1,38 @@
-/*
-font-family: 'Oswald', sans-serif;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Caladea', serif; 
- */
 
 body{
     font-family: Arial;
     box-sizing: border-box;
     margin: 0;
 }
+
+/* FORMULARIO  ----- FORMULARIO*/
+
+/* contenedor del formulario */
+.contenedor{
+    display: grid;
+    /* grid-template: filas/columnas */
+    grid-template: .1fr .5fr/1fr;
+    height: 100vh;
+}
+/*{ cabebera de formulario*/
+.cabecera-formulario{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-color: brown;
+    display: flex;
+}
+/*seccion principal del formulario*/
+.seccion-formulario{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    background-color: rgb(64, 33, 33);
+}
+
+/* FORMULARIO ----- FORMULARIO */
+
+
 /* estilo de botones */
 .color-botones{
     background: rgb(36,0,0);
@@ -20,47 +44,11 @@ body{
     width: 100%;
     border-radius: 2px;
 }
-.margin-botones{
-    margin-bottom: 20px;
-}
-.texto-center{
-    text-align: center;
-    font-family: 'Oswald', sans-serif;
-    color: white;
-}
-.color-botones:hover{
-    background: #dc3545;
-    box-shadow: 2px 2px 2px 1px rgb(80, 3, 3);
-}
 /* estilo de botones } */
-
-/* {contenedor pagina */
-.contenedor{
-    display: grid;
-    /* grid-template: filas/columnas */
-    grid-template: .4fr .1fr 1fr 1fr/ .5fr 1fr 1fr;
-    height: 100vh;
-}
-/* contenedor pagina } */
-
-/*{ menu de navegacion*/
-.menu-left{
-    grid-row: 1/5;
-    grid-column: 1/2;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    background-image: url(../img/img-menu-izquierda.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    filter: contrast(.8);
-}
-/*menu de navegacion }*/
 
 /*{ menu de informacion personal*/
 .menu-header{
-    grid-column: 2/4;
+    grid-column: 1/2;
     grid-row: 1/2;
     background-color: rgb(64, 33, 33);
     display: flex;
@@ -69,77 +57,14 @@ body{
     color: white;
     font-family: 'Oswald', sans-serif;
 }
-
-.menu-cerrar-sesion{
-    display: flex;
-    justify-content: space-evenly;
-
-}
 /*menu de informacion personal }*/
 
-/*{ pestañas de navegacion*/
-.nav-sheets{
-    grid-column: 2/4;
-    grid-row: 2/3;
-    background-color: brown;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    filter: contrast(.9);
-}
-
-.button-proveedores{
-    width: 49.8%;
-}
-
-.button-compras{
-    width: 49.8%;
-}
-@media (max-width:550px){
-    .button-proveedores{
-        width: 100%;
-    }
-    .button-compras{
-        width: 100%;
-    }
-}
-/*pestañas de navegacion }*/
 
 
-/*{ primer contenedor de formulario*/
-.content-form{
-    grid-column: 2/4;
-    grid-row: 3/4;
-    border-bottom: 1px solid white;
-    border-top: 1px solid white;
-    background-color: rgb(64, 33, 33);
-    filter: contrast(.9);
-}
+
+
 
 .form-group label{
     font-family: 'Oswald', sans-serif;
     color: rgb(241, 241, 241);
-}
-
-/*primer contenedor de formulario}*/
-
-/*{segundo contenedor de formulario*/
-.content-form2{
-    grid-column: 2/4;
-    grid-row: 4/5;
-    background-color: rgb(64, 33, 33);
-    border-bottom: 1px solid white;
-    filter: contrast(.9);
-}
-/*segundo contenedor de formulario}*/
-
-/* reloj intefraz */
-
-.reloj{
-    display: flex;
-    justify-content: center;
-    color: white;
-    font-family: 'Oswald', sans-serif;
-    font-size: 1.5rem;
-    background-color: rgba(0,0,0,.4);
 }

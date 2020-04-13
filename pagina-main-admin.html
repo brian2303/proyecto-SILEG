@@ -11,110 +11,73 @@
     <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.min.css">
 </head>
 <body>
-    <div class="container-fluid">
-        <div class="contenedor">
-            <nav class="menu-left">
-                <div class="menu-principal">
-                    <button class="color-botones margin-botones">Ventas</button>
-                    <button class="color-botones margin-botones">Inventarios</button>
-                    <button class="color-botones margin-botones">Fidelizacion</button>
-                    <button class="color-botones margin-botones">Usuarios</button>
-                </div>
-                <div class="reloj">
-                    <p class="horas" id="horas"></p>
-                    <p>:</p>
-                    <p class="minutos" id="minutos"></p>
-                    <p>:</p>
-                    <p class="segundos" id="segundos"></p>
-                </div>
-                <div class="footer-menu-left">
-                    <p class="texto-center">SILEG</p>
-                    <p class="texto-center">TODOS LOS DERECHOS RESERVADOS</p>
-                    <p class="texto-center"><img src="./img/derechos-de-autor.png" alt=""></p>
-                </div>
-            </nav>
-            <header class="menu-header">
-                <div>
-                    <span>SILEG</span>
-                </div>
-                <div class="menu-cerrar-sesion">
-                    <p>Usuario: <span>Administrador</span></p>
-                    <p class="">Cerrar Sesión</p>
-                </div>
-            </header>
-            <nav class="nav-sheets">
-                <!-- <a href="#" class="button-proveedores">Productos y proveedores</a> -->
-                <button class="color-botones button-proveedores">Productos y proveedores</button>
-                <button class="color-botones button-compras">compras</button>
-            </nav>
-            <!-- PRIMER CONTENEDOR PARA FORMULARIO DE PRODUCTOS -->
-            <section class="content-form">
-                <form>
-                    <div class="form-row p-3">
-                      <div class="form-group col-md-6">
+    <!--CONTENEDOR PARA FORMULARIO -->
+    <div class="contenedor">
+        <header class="cabecera-formulario">
+            <span class="color-botones button-proveedores">Gestionar Productos</span>
+        </header> 
+        <section class="seccion-formulario">
+            <form>
+                <div class="form-row p-3">
+                    <div class="form-group col-md-2">
                         <label for="id_Producto">id Producto:</label>
                         <input type="text" class="form-control" id="id_Producto">
-                      </div>
-                      <div class="form-group col-md-6">
+                    </div>
+                    <div class="form-group col-md-3">
                         <label for="nombre_Producto">Nombre producto:</label>
                         <input type="text" class="form-control" id="nombre_Producto">
-                      </div>
                     </div>
-                    <div class="form-row p-3">
-                        <div class="form-group col-md-6">
-                            <label for="Categoria">Categoria:</label>
-                            <input type="text" class="form-control" id="Categoria">
-                        </div>
-                        <div class="form-group col-md-3">
-                            <label for="stock_Minimo">Stock minimo:</label>
-                            <input type="text" class="form-control" id="stock_Minimo">
-                        </div>
-                        <div class="form-group col-md-3">
-                            <label for="stock_Actual">Stock actual:</label>
-                            <input type="text" class="form-control" id="stock_Actual">
-                        </div>
+                    <div class="form-group col-md-3">
+                        <label for="inputState">Proveedor:</label>
+                        <select id="inputState" class="form-control">
+                          <option selected>Seleccionar</option>
+                          <option>Proveedor1</option>
+                          <option>Proveedor2</option>
+                          <option>Proveedor3</option>
+                        </select>
                     </div>
-                    <div class="form-row p-3">
-                        <button type="submit" class="btn btn-outline-danger col-md-3 offset-md-9">Listar productos</button>
+                    <div class="form-group col-md-4">
+                        <label for="inputState">Categoria:</label>
+                        <select id="inputState" class="form-control">
+                          <option selected>Seleccionar</option>
+                          <option>Categoria1</option>
+                          <option>Categoria2</option>
+                          <option>Categoria3</option>
+                        </select>
                     </div>
-                  </form>
-            </section>
-            <!-- SEGUNDO CONTENEDOR DE FORMULARIO PARA PROVEEDORES -->
-            <section class="content-form2">
-                <form>
-                    <div class="form-row p-3">
-                      <div class="form-group col-md-6">
-                        <label for="id_Producto">id Producto:</label>
-                        <input type="text" class="form-control" id="id_Producto">
-                      </div>
-                      <div class="form-group col-md-6">
-                        <label for="nombre_Producto">Nombre producto:</label>
-                        <input type="text" class="form-control" id="nombre_Producto">
-                      </div>
+                </div>
+                <div class="form-row p-3">
+                    <div class="form-group col-md-2">
+                        <label for="stock_Minimo">Unidades:</label>
+                        <input type="text" class="custom-select" id="stock_Minimo">
                     </div>
-                    <div class="form-row p-3">
-                        <div class="form-group col-md-6">
-                            <label for="Categoria">Categoria:</label>
-                            <input type="text" class="form-control" id="Categoria">
-                        </div>
-                        <div class="form-group col-md-3">
-                            <label for="stock_Minimo">Stock minimo:</label>
-                            <input type="text" class="form-control" id="stock_Minimo">
-                        </div>
-                        <div class="form-group col-md-3">
-                            <label for="stock_Actual">Stock actual:</label>
-                            <input type="text" class="form-control" id="stock_Actual">
-                        </div>
+                    <div class="form-group col-md-2">
+                        <label for="stock_Minimo">Stock minimo:</label>
+                        <input type="text" class="form-control" id="stock_Minimo">
                     </div>
-                    <div class="form-row p-3">
-                        <button type="submit" class="btn btn-outline-danger col-md-3 offset-md-9">Listar Proveedores</button>
+                    <div class="form-group col-md-2">
+                        <label for="stock_Actual">Stock actual:</label>
+                        <input type="text" class="form-control" id="stock_Actual">
                     </div>
-                  </form>
-            </section>
-        </div>
+                    <div class="form-group col-md-3">
+                        <label for="stock_Actual">Precio compra:</label>
+                        <input type="text" class="form-control" id="stock_Actual">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="stock_Actual">Precio venta:</label>
+                        <input type="text" class="form-control" id="stock_Actual">
+                    </div>
+                </div>
+                <div class="form-row p-3">
+                    <button type="submit" class="btn btn-dark col-md-2 mr-1">Registrar Producto</button>
+                    <button type="submit" class="btn btn-dark col-md-2">Cancelar</button>
+                    <button type="submit" class="btn btn-outline-danger ml-1 col-md-2">Listar productos</button>
+                </div>
+            </form>
+        </section>
     </div>
-    <script src="js/reloj.js"></script>
-    <script src="bootstrap-4.4.1-dist/js/jquery-3.4.1.min.js"></script>
+    <!-- /CONTENEDOR PARA FORMULARIO -->
+<script src="bootstrap-4.4.1-dist/js/jquery-3.4.1.min.js"></script>
     <script src="bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
     
 </body>
