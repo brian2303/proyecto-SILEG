@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 img{
     vertical-align: initial !important;
 }
@@ -118,4 +119,20 @@ a:hover{
     box-shadow: -5px -2px 3px 1px rgb(70, 8, 8);
     padding: 5px;
     margin-top: 2px;
+}
+
+@media screen and (max-width:550px){
+    
+    .menu-izquierdo{
+        position: absolute;
+        top: 0;
+        left: -195px;
+        height: 100%;
+    }
+
+    .menu-izquierdo:hover{
+        transition: all 1s;
+        top: 0;
+        left: 0;
+    }
 }

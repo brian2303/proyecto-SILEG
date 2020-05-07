@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SILEG - INICIAL</title>
+    <!-- plantilla base por si se necesitan mas modulos -->
     <link rel="stylesheet" href="CSS/pagina-main-admin.css">
-    <!-- referencia a google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Poppins|Oswald|Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../bootstrap-4.4.1-dist/css/bootstrap.min.css">
 </head>
 <body>
     <div class="contendor-principal">
@@ -38,9 +39,9 @@
                             </button>
                             <ul id="sub-menu-ventas" class="submenu sub-menu-ventas ocultar">
                                 <li class="submenu-item"><a class="color-fuente" href="vistashtml/clientes.html">Clientes</a></li>
-                                <li class="submenu-item"><a class="color-fuente" href="#">Registro venta</a></li>
-                                <li class="submenu-item"><a class="color-fuente" href="#">Canje Productos</a></li>
-                                <li class="submenu-item"><a class="color-fuente" href="#">Detalle Factura</a></li>
+                                <li class="submenu-item"><a class="color-fuente" href="vistashtml/registro-venta.html">Registro venta</a></li>
+                                <li class="submenu-item"><a class="color-fuente" href="vistashtml/canje-productos.html">Canje Productos</a></li>
+                                <li class="submenu-item"><a class="color-fuente" href="vistashtml/detalle-factura.html">Detalle Factura</a></li>
                             </ul>
                         </li>
                         <li class="mod-inventarios modulo">
@@ -49,10 +50,10 @@
                                 <a class="mod-inventarios color-fuente" href="#">Inventarios</a>
                             </button>
                             <ul id="sub-menu-inventarios" class="submenu sub-menu-inventarios ocultar">
-                                <li class="submenu-item"><a class="color-fuente" href="#">Productos</a></li>
-                                <li class="submenu-item"><a class="color-fuente" href="#">Categorias</a></li>
+                                <li class="submenu-item"><a class="color-fuente" href="vistashtml/productos.html">Productos</a></li>
+                                <li class="submenu-item"><a class="color-fuente" href="vistashtml/categorias.html">Categorias</a></li>
                                 <li class="submenu-item"><a class="color-fuente" href="vistashtml/proveedor.html">Proveedores</a></li>
-                                <li class="submenu-item"><a class="color-fuente" href="#">Compras</a></li>
+                                <li class="submenu-item"><a class="color-fuente" href="vistashtml/compras.html">Compras</a></li>
                             </ul>
                         </li>
                         <li class="mod-fidelizacion modulo">
@@ -61,8 +62,8 @@
                                 <a class="mod-fidelizacion color-fuente" href="#">Fidelizacion</a>
                             </button>
                             <ul id="sub-menu-fidelizacion" class="submenu sub-menu-fidelizacion ocultar">
-                                <li class="submenu-item"><a class="color-fuente" href="#">Campañas</a></li>
-                                <li class="submenu-item"><a class="color-fuente" href="#">PQRS</a></li>
+                                <li class="submenu-item"><a class="color-fuente" href="vistashtml/campañas.html">Campañas</a></li>
+                                <li class="submenu-item"><a class="color-fuente" href="vistashtml/pqrs.html">PQRS</a></li>
                             </ul>
                         </li>
                         <li class="mod-usuarios modulo">
@@ -71,8 +72,8 @@
                                 <a class="mod-usuarios color-fuente" href="#">Usuarios</a>
                             </button>
                             <ul id="sub-menu-usuarios" class="submenu sub-menu-usuarios ocultar">
-                                <li class="submenu-item"><a class="color-fuente" href="#">Usuarios registrados</a></li>
-                                <li class="submenu-item"><a class="color-fuente" href="#">Rol</a></li>
+                                <li class="submenu-item"><a class="color-fuente" href="vistashtml/usuarios.html">Usuarios registrados</a></li>
+                                <li class="submenu-item"><a class="color-fuente" href="vistashtml/rol.html">Rol</a></li>
                             </ul>
                         </li>
                         <li class="mod-reportes modulo">
@@ -81,7 +82,7 @@
                                 <a class="mod-usuarios color-fuente" href="#">Reportes</a>
                             </button>
                             <ul id="sub-menu-reportes" class="submenu sub-menu-reportes ocultar">
-                                <li class="submenu-item"><a class="color-fuente" href="#">Reportes Generales</a></li>
+                                <li class="submenu-item"><a class="color-fuente" href="vistashtml/reportes.html">Reportes Generales</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -92,7 +93,7 @@
             </div>
         </section>
     </div>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="../bootstrap-4.4.1-dist/js/jquery-3.4.1.min.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="js/principal-administrador.js"></script>
 </body>

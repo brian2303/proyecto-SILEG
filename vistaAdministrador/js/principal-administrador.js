@@ -11,7 +11,7 @@ const subMenuReportes = document.getElementById('sub-menu-reportes');
 
 
 function mostrar(elemento) {
-    elemento.classList.toggle('mostrar')
+    $(elemento).toggle(800);
 }
 
 botonVentas.addEventListener('click',()=>{

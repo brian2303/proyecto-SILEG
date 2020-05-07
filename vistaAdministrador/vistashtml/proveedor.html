@@ -6,6 +6,7 @@
     <title>SILEG - INICIAL</title>
     <link rel="stylesheet" href="../CSS/pagina-main-admin.css">
     <link rel="stylesheet" href="../CSS/proveedor.css">
+    <link rel="stylesheet" href="../../bootstrap-4.4.1-dist/css/bootstrap.min.css">
     <!-- referencia a google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Poppins|Oswald|Open+Sans&display=swap" rel="stylesheet">
 </head>
@@ -124,18 +125,18 @@
                             <input class="campo" type="text" id="producto-proveedor" name="producto-proveedor"> 
                         </div>
                         <div class="contenedor-botones">
-                            <button id="btn-registro" class="btn btn-outline-dark">Registrar <img src="" alt=""></button>
-                            <button class="btn btn-outline-dark">Modificar <img src="" alt=""></button>
+                            <button id="btn-registro" class="btn-sileg2 btn btn-outline-dark">Registrar <img src="" alt=""></button>
+                            <button class="btn-sileg2 btn btn-outline-dark">Modificar <img src="" alt=""></button>
                             <button class="btn btn-outline-danger">Anular <img src="" alt=""></button> 
                         </div>
                     </form>
                     <div class="contenedor-tabla">
-                        <div class="buscador">
+                        <div class="buscador ">
                             <input class="mr-sm-2 buscador-input" type="search" placeholder="Buscar..." aria-label="Search">
                             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
                         </div>
-                        <div class="table-responsive">
-                            <table class="table table-bordered table-hover">
+                        <div class="contenedor-campos">
+                            <table class="table table-bordered table-hover table-responsive">
                                 <thead class="thead-dark">
                                     <tr>
                                     <th scope="col">id</th>
@@ -217,7 +218,7 @@
             </div>
         </section>
     </div>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="../../bootstrap-4.4.1-dist/js/jquery-3.4.1.min.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="../js/principal-administrador.js"></script>
 </body>

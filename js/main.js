@@ -1,6 +1,6 @@
 //regex para validar campos
 const regexEmail = /\w+@\w+\.+[a-zA-Z]/;
-const regexPass = /\w+/;
+const regexPass = /\w{5,15}/;
 
 //botones y inputs de formulario
 let botonInicioSesion = document.getElementById('btn-iniciarsesion');
