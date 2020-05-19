@@ -101,7 +101,7 @@
                             <input class="campo" type="text" id="nombre-proveedor" name="nombre-proveedor"> 
                         </div>
                         <div class="contenedor-por-campo">
-                            <label class="titulo-por-campo" for="apellidos-proveedor">Apellidos:</label>
+                            <label class="titulo-por-campo" for="apellidos-proveedor">Representante:</label>
                             <input class="campo" type="text" id="apellidos-proveedor" name="apellidos-proveedor"> 
                         </div>
                         <div class="contenedor-por-campo">
@@ -113,7 +113,7 @@
                             <input class="campo" type="text" id="email-proveedor" name="email-proveedor"> 
                         </div>
                         <div class="contenedor-por-campo">
-                            <label class="titulo-por-campo" for="cedula-proveedor">Cedula:</label>
+                            <label class="titulo-por-campo" for="cedula-proveedor">Nit:</label>
                             <input class="campo" type="text" id="cedula-proveedor" name="cedula-proveedor"> 
                         </div>
                         <div class="contenedor-por-campo">
@@ -121,8 +121,15 @@
                             <input class="campo" type="text" id="telefono-proveedor" name="telefono-proveedor"> 
                         </div>
                         <div class="contenedor-por-campo">
-                            <label class="titulo-por-campo" for="producto-proveedor">Producto:</label>
-                            <input class="campo" type="text" id="producto-proveedor" name="producto-proveedor"> 
+                            <label class="titulo-por-campo" for="exampleFormControlSelect1">Producto</label>
+                            <select class="select-product form-control" id="exampleFormControlSelect1">
+                                <option>Producto 1</option>
+                                <option>Producto 2</option>
+                                <option>Producto 3</option>
+                                <option>Producto 4</option>
+                                <option>Producto 5</option>
+                                <option>Producto 3</option>
+                            </select>
                         </div>
                         <div class="contenedor-botones">
                             <button id="btn-registro" class="btn btn-outline-success btn-block">Registrar <img src="" alt=""></button>
@@ -141,7 +148,7 @@
                                     <tr>
                                     <th scope="col">id</th>
                                     <th scope="col">Nombre</th>
-                                    <th scope="col">Apellidos</th>
+                                    <th scope="col">Representante</th>
                                     <th scope="col">Telefono</th>
                                     <th scope="col">Direccion</th>
                                     <th scope="col">Editar</th>
@@ -212,6 +219,8 @@
         </section>
     </div>
     <script src="../../bootstrap-4.4.1-dist/js/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="../../bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="../js/principal-administrador.js"></script>
 </body>

@@ -9,7 +9,6 @@ const subMenuUsuarios = document.getElementById('sub-menu-usuarios');
 const botonReportes = document.getElementById('mod-reportes');
 const subMenuReportes = document.getElementById('sub-menu-reportes');
 
-
 function mostrar(elemento) {
     $(elemento).toggle(800);
 }
@@ -33,3 +32,6 @@ botonUsuarios.addEventListener('click',()=>{
 botonReportes.addEventListener('click',()=>{
     mostrar(subMenuReportes);
 });
+
+
+
