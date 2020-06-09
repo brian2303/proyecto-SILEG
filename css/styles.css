@@ -76,6 +76,14 @@ font-family: 'Caladea', serif;
         background: linear-gradient(rgb(61, 18, 18),rgb(138, 24, 24),rgb(167, 31, 31));
         color:white 
     }
+
+    .mostrarmsg{
+        display: block !important;
+        color: red;
+    }
+    .ocultar{
+        display: none;
+    }
 /* /modal para inicio de sesión */
 
 /* Footer */
