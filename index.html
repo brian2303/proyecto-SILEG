@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- CSS -->
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="views/css/styles.css">
 
     <!-- Goole fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Oswald&display=swap" rel="stylesheet">
@@ -19,7 +19,8 @@
     <!-- header -->
     <nav id="header" class="navbar navbar-expand-lg navbar-light bg-light pt-0 pb-0">
         <a class="navbar-brand" href="#">
-            <img src="./img/beer.png" alt="beer-pick"><span class="font">SILEG</span>
+            <img src="views/img/beer.png" alt="beer-pick">
+            <span class="font">SILEG</span>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -28,10 +29,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-                <a class="nav-link font" href="#">Contactanos<span class="sr-only">(current)</span></a>
+                <a class="nav-link font" href="#footer">Contactanos<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link font" href="#">Localiza nuestra tienda</a>
+                <a class="nav-link font" href="#ubicacion">Localiza nuestra tienda</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link font d-none d-md-inline-block" data-toggle="modal" data-target="#exampleModalScrollable" href="#">Iniciar Sesion</a>
@@ -46,22 +47,22 @@
         <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel" data-pause="false">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="./img/main1.jpg" class="d-block w-100" alt="main1">
+                <img src="views/img/main1.jpg" class="d-block w-100" alt="main1">
               </div>
               <div class="carousel-item">
-                <img src="./img/main2.jpg" class="d-block w-100" alt="main2">
+                <img src="views/img/main2.jpg" class="d-block w-100" alt="main2">
               </div>
               <div class="carousel-item">
-                <img src="./img/main3.jpg" class="d-block w-100" alt="main3 ">
+                <img src="views/img/main3.jpg" class="d-block w-100" alt="main3 ">
               </div>
               <div class="overlay">
                   <div class="container">
                       <div class="row align-items-center">
                           <div class="col-md-6 offset-md-6  text-center text-md-right">
                               <h1>Licores en casa el gato</h1>
-                              <a href="#" class="d-inline-block d-md-none btn btn-outline-warning" data-toggle="modal" data-target="#exampleModalScrollable">Iniciar sesion</a>
+                              <a href="#" class="d-inline-block d-md-none btn btn-info" data-toggle="modal" data-target="#exampleModalScrollable">Iniciar sesion</a>
                               <p class="d-none d-md-block">Recuerda disfrutar siempre con responsabilidad, en licores en casa el gato contamos con los mejores descuentos y promociones para ti registrate para obtener mas informacion...</p>
-                              <a href="#" class="d-inline-block btn btn btn-outline-warning">Registrarme</a>
+                              <a target="blank" href="views/registrarme.html" class="d-inline-block btn btn btn-info">Registrarme</a>
                           </div>
                       </div>
                   </div>
@@ -70,6 +71,23 @@
         </div>
     </main>
     <!-- /Main -->
+
+    <!-- section maps -->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <hr class="border-bottom-5 border-primary">
+            <p id="ubicacion" class="text-center font-weight-bold">LOCALÍZANOS</p>
+            <hr class="border-bottom-5 border-primary">
+          </div>
+        </div>
+        <div class="row ">
+          <div class="p-0 col-12">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6687.473575317798!2d-74.23275923614965!3d4.70114361931714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f77f0ada00867%3A0x43a976bf25ba6640!2sMosquera%2C%20Cundinamarca!5e0!3m2!1ses-419!2sco!4v1591723413759!5m2!1ses-419!2sco" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </div>
+        </div>
+      </div>
+    <!-- /section maps -->
 
     <!-- modal para inicio de sesión -->
     <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
@@ -82,51 +100,66 @@
             </button>
           </div>
           <div class="modal-body">
-            <div class="container">
-              <div class="row">
-                <div class="col">
-                  <form>
-                    <div class="form-group">
-                      <label for="formGroupExampleInput">Correo electronico</label>
-                      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ingrese correo electronico">
-                      <span class="ocultar">Datos incorrectos</span>
-                    </div>
-                    <div class="form-group">
-                      <label for="formGroupExampleInput2">Contraseña</label>
-                      <input type="password" class="form-control" id="formGroupExampleInput2" placeholder="Ingrese contraseña">
-                      <span class="ocultar">Datos incorrectos</span>
-                    </div>
-                    <input id="btn-iniciarsesion" type="button" class="btn btn-login btn-block mb-2" value="Iniciar sesión">
-                  </form>
-                </div>
+            <form id="formlogin" action="views/modules/principal-admin.html" method="POST">
+              <div class="form-group">
+                <label for="formGroupExampleInput">Correo electronico</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ingrese correo electronico" required>
+                <span class="ocultar">Datos incorrectos</span>
               </div>
-            </div>
+              <div class="form-group">
+                <label for="formGroupExampleInput2">Contraseña</label>
+                <input type="password" class="form-control" id="formGroupExampleInput2" placeholder="Ingrese contraseña">
+                <span class="ocultar">Datos incorrectos</span>
+              </div>
+              <input id="btn-iniciarsesion" type="submit" class="btn btn-login btn-block mb-2" value="Iniciar sesión">
+            </form>
           </div>
         </div>
       </div>
     </div>
     <!-- /modal para inicio de sesión -->
 
-      <!-- footer -->
-      <footer id="footer" class="py-2">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col">
-                  <span>
-                      El exceso de alcohol es perjudicial para la salud. Ley 30 de 1986. Prohíbase el expendio de bebidas embriagantes a menores de edad y mujeres embarazadas. Ley 124 de 1994.
-                  </span>     
-                </div>
+    <!-- footer -->
+    <footer id="footer" class="py-2">
+      <div class="container-fluid">
+          <div class="row pb-2">
+            <div class="col-12">
+              <p class="text-center">TU LICOR A DOMICILIO EN FUNZA - MADRID - MOSQUERA</p>
             </div>
-        </div>
+          </div>
+          <div class="row text-center mb-2">
+              <div class="col-12">
+                <span>
+                    El exceso de alcohol es perjudicial para la salud. Ley 30 de 1986. Prohíbase el expendio de bebidas embriagantes a menores de edad y mujeres embarazadas. Ley 124 de 1994.
+                </span>     
+              </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="pb-2 col-md-6 col-12 justify-content-center justify-content-md-end d-flex">
+                  <span class="mr-3">CONTACTANOS:</span>
+                  <img class="mr-2" src="views/img/whatsapp.png" alt="whatsapp">
+                  <span class="mr-5">3154422237</span>
+              </div>
+              <div class="col-md-6 col-12 justify-content-center justify-content-md-start d-flex">
+                <span class="mr-2">SIGUENOS:</span>
+                <a target="blank" href="https://www.facebook.com/licoresElgatoEC">
+                  <img src="views/img/facebook.png" alt="redes">
+                  <span>licoresElgatoEC</span>
+                </a>
+              </div>
+            </div>
+          </div>
+      </div>
     </footer>
-      <!-- /footer -->
+    <!-- /footer -->
       
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="./js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="views/js/main.js"></script>
   </body>
 </html>
