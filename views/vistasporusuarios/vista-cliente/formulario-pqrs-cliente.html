@@ -144,7 +144,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h2 class="m-0 text-dark">Ventas</h2>
+            <h1 class="m-0 text-dark">fidelización</h1>
           </div><!-- /.col -->
         </div><!-- /.row -->
       </div><!-- /.container-fluid -->
@@ -154,10 +154,103 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Main content -->
     <div class="content">
       <div class="container-fluid">
+        <div class="row">
+          <div class="col-5">
+              <div class="card">
+                <div class="card-body register-card-body">
+                  <p class="login-box-msg">enviar una nueva pqrs</p>
+            
+                  <form action="../../index.html" method="post">
+                    <!--campos formulario  -->
+                    <div class="row">
+                      <div class="col">
+                        <div class="input-group mb-3">
+                          <select class="form-control" name="seleccion" id="seleccion">
+                          <option class="" selected value="0"> Elige el tipo</option>
+                                <option value="1">peticion</option> 
+                                <option value="2">queja</option> 
+                                <option value="3">reclamo</option>
+                                <option value="4">sujerencia</option>
+                          </select>
+                          <div class="input-group-append">
+                            <div class="input-group-text">
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col">
+                        <div class="input-group mb-3">
+                          <input type="text" class="form-control" placeholder="titulo">
+                          <div class="input-group-append">
+                            <div class="input-group-text">
+                              <span class="fas fa-text-height"></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                   <div class="row">
+                     <div class="col">
+                      <div class="input-group mb-3">
+                        <input type="date" class="form-control" placeholder="fecha limite">
+                        <div class="input-group-append">
+                          <div class="input-group-text">
+                            <i class="fas fa-poll"></i>
+                          </div>
+                        </div>
+                      </div>
+                     </div>
+                    
+                   </div>
+                   <div class="row">
+                    <div class="col">
+                      <div class="input-group mb-3">
+                        <textarea name="textarea" id="textarea" cols="95" rows="5" placeholder="descripcion"></textarea>
+                        </div>
+                      </div>
+                     </div>
+                   </div>
+                    <!-- fin columnas formulario -->
+                    
+                     <!-- inicio boton -->
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-success btn-block">enviar</button>
+                    </div>
+                     <!-- fin  -->
+                  </form>
+                </div>
+                <!-- /.form-box -->
+              </div><!-- /.card -->
+            </div>
+             <!--inicio boton -->
+        <div class="row">
+          <div class="col">
+             <a href="fidelizacion.html" class="btn btn-primary">
+                volver
+             </a>
+          </div>
+        </div>
+        <!--fin boton -->
+        </div>
       </div><!-- /.container-fluid -->
     </div>
     <!-- /.content -->
+   
+    
+    <a href="fidelizacion.html" class="btn btn-primary">
+        <i></i>
+        volver
+      </a>
+          <!-- /.form-box -->
+        </div><!-- /.card -->
+      </div>
+      
   </div>
+  </div>
+  
   <!-- /.content-wrapper -->
 
   <!-- Control Sidebar -->
@@ -192,5 +285,3 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <script src="../dist/js/adminlte.min.js"></script>
 </body>
 </html>
-
-
