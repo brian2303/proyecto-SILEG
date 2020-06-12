@@ -62,7 +62,7 @@
                               <h1>Licores en casa el gato</h1>
                               <a href="#" class="d-inline-block d-md-none btn btn-info" data-toggle="modal" data-target="#exampleModalScrollable">Iniciar sesion</a>
                               <p class="d-none d-md-block">Recuerda disfrutar siempre con responsabilidad, en licores en casa el gato contamos con los mejores descuentos y promociones para ti registrate para obtener mas informacion...</p>
-                              <a target="blank" href="views/registrarme.html" class="d-inline-block btn btn btn-info">Registrarme</a>
+                              <a target="blank" href="views/vistasporusuarios/vista-cliente/registrarme.html" class="d-inline-block btn btn btn-info">Registrarme</a>
                           </div>
                       </div>
                   </div>
@@ -81,9 +81,39 @@
             <hr class="border-bottom-5 border-primary">
           </div>
         </div>
-        <div class="row ">
-          <div class="p-0 col-12">
+        <div class="row mb-2 d-flex align-items-center">
+          <div class=" col-12 col-md-6">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6687.473575317798!2d-74.23275923614965!3d4.70114361931714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f77f0ada00867%3A0x43a976bf25ba6640!2sMosquera%2C%20Cundinamarca!5e0!3m2!1ses-419!2sco!4v1591723413759!5m2!1ses-419!2sco" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="card card-info">
+              <div class="card-header">
+                <h3 class="card-title">Conoce todas nuestras promociones</h3>
+              </div>
+              <!-- /.card-header -->
+              <!-- form start -->
+              <form class="form-horizontal">
+                <div class="card-body">
+                  <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                    <div class="col-sm-10">
+                      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="inputPassword3" class="col-sm-2 col-form-label">Celular</label>
+                    <div class="col-sm-10">
+                      <input type="number" class="form-control" id="inputPassword3" placeholder="celular">
+                    </div>
+                  </div>
+                </div>
+                <!-- /.card-body -->
+                <div class="card-footer">
+                  <button type="submit" class="btn btn-info">Enviar</button>
+                </div>
+                <!-- /.card-footer -->
+              </form>
+            </div>
           </div>
         </div>
       </div>
@@ -100,7 +130,7 @@
             </button>
           </div>
           <div class="modal-body">
-            <form id="formlogin" action="views/modules/principal-admin.html" method="POST">
+            <form id="formlogin" action="#" method="POST">
               <div class="form-group">
                 <label for="formGroupExampleInput">Correo electronico</label>
                 <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ingrese correo electronico" required>
