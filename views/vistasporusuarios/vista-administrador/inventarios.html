@@ -94,7 +94,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
-               with font-awesome or any other icon font library -->
+          with font-awesome or any other icon font library -->
           <li class="nav-item has-treeview menu-open">
             <a href="#" class="nav-link active">
               <p>
@@ -109,12 +109,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="inventarios.html" class="nav-link">
                   <p>Inventarios</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="creacion-campañas.html" class="nav-link">
+                <a href="fidelizacion-admin.html" class="nav-link">
                   <p>Fidelización</p>
                 </a>
               </li>
@@ -154,6 +154,259 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Main content -->
     <div class="content">
       <div class="container-fluid">
+      <!-- Modal para registro de proveedores -->
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="modal fade" id="registro-cliente" tabindex="-1" role="dialog" aria-labelledby="registro-cliente"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2 class="modal-tittle mr-2">Nuevo Proveedor
+                      <span class="fas fa-plus-square"></span>
+                    </h2>
+                    <button class="close" data-dismiss="modal" aria-label="cerrar">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form action="#" method="post">
+                      <div class="row">
+                        <div class="col-12 input-group mb-3">
+                          <input type="text" name="nombre" class="form-control" placeholder="Nombre">
+                          <div class="input-group-append">
+                            <div class="input-group-text">
+                              <span class="fas fa-user"></span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 input-group mb-3">
+                          <input type="text" name="representante" class="form-control" placeholder="Representante">
+                          <div class="input-group-append">
+                            <div class="input-group-text">
+                              <span class="fas fa-user"></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 input-group mb-3">
+                          <input type="text" name="celular" class="form-control" placeholder="celular">
+                          <div class="input-group-append">
+                            <div class="input-group-text">
+                              <span class="fas fa-phone-square-alt"></span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 input-group mb-3">
+                          <input type="text" name="telopcional" class="form-control" placeholder="telefono opcional">
+                          <div class="input-group-append">
+                            <div class="input-group-text">
+                              <span class="fas fa-phone-square-alt"></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12">
+                          <div class="input-group mb-3">
+                            <input type="text" name="direccion" class="form-control" placeholder="Direccion">
+                            <div class="input-group-append">
+                              <div class="input-group-text">
+                                <span class="fas fa-street-view"></span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="input-group mb-3">
+                            <input type="text" name="Nit" class="form-control" placeholder="Nit">
+                            <div class="input-group-append">
+                              <div class="input-group-text">
+                                <span class="fas fa-street-view"></span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <!-- /.col -->
+                        <div class="col-12">
+                          <button type="submit" class="btn btn-primary btn-block">Registrarme</button>
+                        </div>
+                        <!-- /.col -->
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- / Modal para registro de proveedores -->
+      <!-- tabla Proveedores -->
+      <div class="content">
+        <div class="container-fluid">
+          <div class="row mb-2">
+            <div class="col">
+              <div class="card">
+                <div class="card-header">
+                  <div class="row">
+                    <div class="col-12 col-md-6">
+                      <h2>Lista general proveedores</h2>
+                    </div>
+                    <div class="col-12 col-sm-6 d-flex align-items-center justify-content-md-end">
+                      <a class="btn btn-success mr-2 btn-sm" href="#" data-toggle="modal"
+                        data-target="#registro-cliente">Registrar Proveedor</a>
+                      <!-- SEARCH FORM -->
+                      <form class="form-inline">
+                        <div class="input-group input-group-sm">
+                          <input class="form-control form-control-navbar" type="search" placeholder="Buscar"
+                            aria-label="buscar">
+                          <div class="input-group-append">
+                            <button style="background-color: rgb(207, 207, 207);" class="btn btn-navbar" type="submit">
+                              <i class="fas fa-search"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                  <table id="example2" class="table table-bordered table-hover table-responsive-md">
+                    <thead class="text-center">
+                      <tr>
+                        <th>Nombre</th>
+                        <th>Representante</th>
+                        <th>Direccion</th>
+                        <th>Celular</th>
+                        <th>Telefono opc</th>
+                        <th>Nit</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Licores cundinamarca</td>
+                        <td>Pedro mojica</td>
+                        <td>Calle 22 14 49</td>
+                        <td>3245322312</td>
+                        <td>2343232</td>
+                        <td>6433211</td>
+                        <td>
+                          <form action="" class="d-flex justify-content-around">
+                            <button type="submit" class="btn btn-outline-danger btn-sm">
+                              <i class="fas fa-user-times"></i>
+                            </button>
+                            <button type="submit" class="btn btn-warning btn-sm">
+                              <i class="far fa-edit"></i>
+                            </button>
+                          </form>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Distri licores</td>
+                        <td>Andres Rodriguez</td>
+                        <td>Calle 22 14 18</td>
+                        <td>3245322312</td>
+                        <td>N/A</td>
+                        <td>6433211</td>
+                        <td>
+                          <form action="" class="d-flex justify-content-around">
+                            <button type="submit" class="btn btn-outline-danger btn-sm">
+                              <i class="fas fa-user-times"></i>
+                            </button>
+                            <button type="submit" class="btn btn-warning btn-sm">
+                              <i class="far fa-edit"></i>
+                            </button>
+                          </form>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Licores por mayor</td>
+                        <td>Daniela Rojas</td>
+                        <td>Calle 19 14 26</td>
+                        <td>3245322312</td>
+                        <td>2324222</td>
+                        <td>6433211</td>
+                        <td>
+                          <form action="" class="d-flex justify-content-around">
+                            <button type="submit" class="btn btn-outline-danger btn-sm">
+                              <i class="fas fa-user-times"></i>
+                            </button>
+                            <button type="submit" class="btn btn-warning btn-sm">
+                              <i class="far fa-edit"></i>
+                            </button>
+                          </form>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Surti Tragos</td>
+                        <td>Pedro Martinez</td>
+                        <td>Calle 21 17 16</td>
+                        <td>3245322312</td>
+                        <td>N/A</td>
+                        <td>6433211</td>
+                        <td>
+                          <form action="" class="d-flex justify-content-around">
+                            <button type="submit" class="btn btn-outline-danger btn-sm">
+                              <i class="fas fa-user-times"></i>
+                            </button>
+                            <button type="submit" class="btn btn-warning btn-sm">
+                              <i class="far fa-edit"></i>
+                            </button>
+                          </form>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>Licores Bogota S.A</td>
+                        <td>Danilo Mojica</td>
+                        <td>Calle 28 14 16</td>
+                        <td>3245322312</td>
+                        <td>N/A</td>
+                        <td>6433211</td>
+                        <td>
+                          <form action="" class="d-flex justify-content-around">
+                            <button type="submit" class="btn btn-outline-danger btn-sm">
+                              <i class="fas fa-user-times"></i>
+                            </button>
+                            <button type="submit" class="btn btn-warning btn-sm">
+                              <i class="far fa-edit"></i>
+                            </button>
+                          </form>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>Distribuidora</td>
+                        <td>Mojica</td>
+                        <td>Calle 22 14 16</td>
+                        <td>3245322312</td>
+                        <td>2343454</td>
+                        <td>6433211</td>
+                        <td>
+                          <form action="" class="d-flex justify-content-around">
+                            <button type="submit" class="btn btn-outline-danger btn-sm">
+                              <i class="fas fa-user-times"></i>
+                            </button>
+                            <button type="submit" class="btn btn-warning btn-sm">
+                              <i class="far fa-edit"></i>
+                            </button>
+                          </form>
+                        </td>
+                      </tr>
+                  </table>
+                </div>
+                <!-- /.card-body -->
+              </div>
+            </div>
+          </div>
+        </div><!-- /.container-fluid -->
+      </div>
       </div><!-- /.container-fluid -->
     </div>
     <!-- /.content -->

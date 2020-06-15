@@ -74,7 +74,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Brand Logo -->
     <a href="#" class="brand-link">
       <img src="../img/beer.png" alt="SILEG Logo" class="brand-image img-circle elevation-3"
-           style="opacity: .8">
+        style="opacity: .8">
       <span class="brand-text font-weight-light">SILEG</span>
     </a>
 
@@ -94,7 +94,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
-               with font-awesome or any other icon font library -->
+          with font-awesome or any other icon font library -->
           <li class="nav-item has-treeview menu-open">
             <a href="#" class="nav-link active">
               <p>
@@ -109,12 +109,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="inventarios.html" class="nav-link">
                   <p>Inventarios</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="creacion-campañas.html" class="nav-link">
+                <a href="fidelizacion-admin.html" class="nav-link">
                   <p>Fidelización</p>
                 </a>
               </li>
@@ -192,7 +192,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
               <div class="info-box-content">
                 <span class="info-box-text">Ventas</span>
-                <span class="info-box-number">760</span>
+                <span class="info-box-number">76</span>
               </div>
               <!-- /.info-box-content -->
             </div>
@@ -212,6 +212,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <!-- /.info-box -->
           </div>
           <!-- /.col -->
+        </div>
+        <div class="row mb-3">
+          <div class="col-12 col-md-6">
+            <canvas id="grafica-ventas"></canvas>
+          </div>
+          <div class="col-12 col-md-6">
+            <canvas id="grafica-compras"></canvas>
+          </div>
         </div>
         <div class="row">
           <div class="col">
@@ -355,5 +363,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- AdminLTE App -->
 <script src="../dist/js/adminlte.min.js"></script>
+<!-- Chart js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
+<!-- Js Propio para modificar las graficas -->
+<script src="../js/graphs.js"></script>
 </body>
 </html>

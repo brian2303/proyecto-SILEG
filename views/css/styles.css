@@ -33,9 +33,9 @@ font-family: 'Caladea', serif;
 
 /* Main */
     #main .carousel-inner img{
-        max-height: 100vh;
         object-fit: cover;
         filter: grayscale(70%);
+        height: 350px;
     }
 
     #carousel{
@@ -60,6 +60,25 @@ font-family: 'Caladea', serif;
     }
 
 /* /Main */
+
+/* Promociones cards */
+.card-sileg{
+    font-family: 'Monserrat';
+    filter: grayscale(30%);
+}
+.promo-tittle{
+    font-family: 'Monserrat';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.division-promo{
+    border-top: 2px solid #007bff;
+}
+/* Promociones cards */
 
 /* modal para inicio de sesión */
     .modal-header{
@@ -86,6 +105,7 @@ font-family: 'Caladea', serif;
     }
     .ocultar{
         display: none;
+        font-family: 'Montserrat', sans-serif;
     }
 /* /modal para inicio de sesión */
 
