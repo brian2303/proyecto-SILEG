@@ -4,6 +4,7 @@ This is a starter template page. Use this page to start your new project from
 scratch. This page gets rid of all links and provides the needed markup only.
 -->
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,400 +17,1105 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- Theme style -->
   <link rel="stylesheet" href="../dist/css/adminlte.min.css">
   <!-- Google Font: Source Roboto  font-family: 'Roboto', sans-serif; font-family:'RobotoMono'monospace; -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,500;0,700;1,700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,500;0,700;1,700&family=Roboto:wght@300&display=swap"
+    rel="stylesheet">
 </head>
+
 <body class="hold-transition sidebar-mini">
-<div class="wrapper">
+  <div class="wrapper">
 
-  <!-- Navbar -->
-  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
-    <!-- Left navbar links -->
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
-      </li>
-    </ul>
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+      <!-- Left navbar links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+      </ul>
 
-    <!-- SEARCH FORM -->
-    <form class="form-inline ml-3">
-      <div class="input-group input-group-sm">
-        <input class="form-control form-control-navbar" type="search" placeholder="Buscar" aria-label="buscar">
-        <div class="input-group-append">
-          <button class="btn btn-navbar" type="submit">
-            <i class="fas fa-search"></i>
-          </button>
+      <!-- SEARCH FORM -->
+      <form class="form-inline ml-3">
+        <div class="input-group input-group-sm">
+          <input class="form-control form-control-navbar" type="search" placeholder="Buscar" aria-label="buscar">
+          <div class="input-group-append">
+            <button class="btn btn-navbar" type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
         </div>
-      </div>
-    </form>
+      </form>
 
-    <!-- Right navbar links -->
-    <ul class="navbar-nav ml-auto">
-      <!-- Notifications Dropdown Menu -->
-      <li class="nav-item dropdown">
-        <a class="nav-link" data-toggle="dropdown" href="#">
-          <i class="far fa-bell"></i>
-          <span class="badge badge-warning navbar-badge">5</span>
-        </a>
-        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-          <span class="dropdown-header">Notificaciones sileg</span>
-          <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item">
-            <i class="fas fa-eye mr-2"></i> 3 Productos sin stock minimo
+      <!-- Right navbar links -->
+      <ul class="navbar-nav ml-auto">
+        <!-- Notifications Dropdown Menu -->
+        <li class="nav-item dropdown">
+          <a class="nav-link" data-toggle="dropdown" href="#">
+            <i class="far fa-bell"></i>
+            <span class="badge badge-warning navbar-badge">5</span>
           </a>
-          <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item">
-            <i class="fas fa-address-book mr-2"></i> 2 pedidos pendientes
-          </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button"><i
-            class="fas fa-sign-out-alt"></i></a>
-      </li>
-    </ul>
-  </nav>
-  <!-- /.navbar -->
-
-  <!-- Main Sidebar Container -->
-  <aside class="main-sidebar sidebar-dark-primary elevation-4">
-    <!-- Brand Logo -->
-    <a href="#" class="brand-link">
-      <img src="../img/beer.png" alt="SILEG Logo" class="brand-image img-circle elevation-3"
-           style="opacity: .8">
-      <span class="brand-text font-weight-light">SILEG</span>
-    </a>
-
-    <!-- Sidebar -->
-    <div class="sidebar">
-      <!-- Sidebar user panel (optional) -->
-      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-        <div class="image">
-          <img src="../img/bri.jpg" class="img-circle elevation-2" alt="User Image">
-        </div>
-        <div class="info">
-          <a href="#" class="d-block">Brian Olarte</a>
-        </div>
-      </div>
-
-      <!-- Sidebar Menu -->
-      <nav class="mt-2">
-        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-          <!-- Add icons to the links using the .nav-icon class
-          with font-awesome or any other icon font library -->
-          <li class="nav-item has-treeview menu-open">
-            <a href="#" class="nav-link active">
-              <p>
-                Modulos
-                <i class="right fas fa-angle-left"></i>
-              </p>
+          <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+            <span class="dropdown-header">Notificaciones sileg</span>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <i class="fas fa-eye mr-2"></i>3 Productos sin stock minimo
             </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <p>Ventas</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="inventarios.html" class="nav-link">
-                  <p>Inventarios</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="fidelizacion-admin.html" class="nav-link">
-                  <p>Fidelización</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="usuarios.html" class="nav-link">
-                  <p>Usuarios</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="reportes.html" class="nav-link">
-                  <p>Reportes</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-      <!-- /.sidebar-menu -->
-    </div>
-    <!-- /.sidebar -->
-  </aside>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <i class="fas fa-address-book mr-2"></i>2 pedidos pendientes
+            </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button"><i
+              class="fas fa-sign-out-alt"></i></a>
+        </li>
+      </ul>
+    </nav>
+    <!-- /.navbar -->
 
-  <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <div class="content-header">
-      <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-sm-6">
-            <h1 class="m-0 text-dark">Inventarios</h1>
-          </div><!-- /.col -->
-        </div><!-- /.row -->
-      </div><!-- /.container-fluid -->
-    </div>
-    <!-- /.content-header -->
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+      <!-- Brand Logo -->
+      <a href="#" class="brand-link">
+        <img src="../img/beer.png" alt="SILEG Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+        <span class="brand-text font-weight-light">SILEG</span>
+      </a>
 
-    <!-- Main content -->
-    <div class="content">
-      <div class="container-fluid">
-      <!-- Modal para registro de proveedores -->
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <div class="modal fade" id="registro-cliente" tabindex="-1" role="dialog" aria-labelledby="registro-cliente"
-              aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h2 class="modal-tittle mr-2">Nuevo Proveedor
-                      <span class="fas fa-plus-square"></span>
-                    </h2>
-                    <button class="close" data-dismiss="modal" aria-label="cerrar">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <form action="#" method="post">
-                      <div class="row">
-                        <div class="col-12 input-group mb-3">
-                          <input type="text" name="nombre" class="form-control" placeholder="Nombre">
-                          <div class="input-group-append">
-                            <div class="input-group-text">
-                              <span class="fas fa-user"></span>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-12 input-group mb-3">
-                          <input type="text" name="representante" class="form-control" placeholder="Representante">
-                          <div class="input-group-append">
-                            <div class="input-group-text">
-                              <span class="fas fa-user"></span>
-                            </div>
-                          </div>
-                        </div>
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <!-- Sidebar user panel (optional) -->
+        <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+          <div class="image">
+            <img src="../img/bri.jpg" class="img-circle elevation-2" alt="User Image">
+          </div>
+          <div class="info">
+            <a href="#" class="d-block">Brian Olarte</a>
+          </div>
+        </div>
+
+        <!-- Sidebar Menu -->
+        <nav class="mt-2">
+          <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <!-- Add icons to the links using the .nav-icon class
+          with font-awesome or any other icon font library -->
+            <li class="nav-item has-treeview menu-open">
+              <a href="#" class="nav-link active">
+                <p>
+                  Modulos
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <p>Ventas</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="inventarios.html" class="nav-link">
+                    <p>Inventarios</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="fidelizacion-admin.html" class="nav-link">
+                    <p>Fidelización</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="usuarios.html" class="nav-link">
+                    <p>Usuarios</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="reportes.html" class="nav-link">
+                    <p>Reportes</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <!-- /.sidebar-menu -->
+      </div>
+      <!-- /.sidebar -->
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+      <!-- Content Header (Page header) -->
+      <div class="content-header">
+        <div class="container-fluid">
+          <div class="row mb-2">
+            <div class="col-12 col-md-6">
+              <h1 class="m-0 text-dark">Inventarios</h1>
+            </div>
+            <div class="col-12 col-md-6 d-flex justify-content-md-end align-items-center mt-sm-2 mt-md-0">
+              <a class="btn btn-dark btn-sm" href="#tabla-productos">Productos</a>
+              <a class="ml-2 btn btn-dark btn-sm" href="#tabla-categorias">Categorias</a>
+              <a class="ml-2 btn btn-dark btn-sm" href="#tabla-compras">Compras</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.content-header -->
+
+      <!-- Main content -->
+      <div class="content">
+        <div class="container-fluid">
+          <!-- Modal para registro de nueva compra -->
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="modal fade" id="registro-compra" tabindex="-1" role="dialog"
+                  aria-labelledby="registro-compra" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h2 class="modal-tittle mr-2">Nueva compra
+                          <span class="fas fa-plus-square"></span>
+                        </h2>
+                        <button class="close" data-dismiss="modal" aria-label="cerrar">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
                       </div>
-                      <div class="row">
-                        <div class="col-12 input-group mb-3">
-                          <input type="text" name="celular" class="form-control" placeholder="celular">
-                          <div class="input-group-append">
-                            <div class="input-group-text">
-                              <span class="fas fa-phone-square-alt"></span>
+                      <div class="modal-body">
+                        <form action="#" method="post">
+                          <div class="row">
+                            <div class="col-12 input-group mb-3">
+                              <input type="date" name="fecha-compra" class="form-control" placeholder="Fecha compra">
                             </div>
-                          </div>
-                        </div>
-                        <div class="col-12 input-group mb-3">
-                          <input type="text" name="telopcional" class="form-control" placeholder="telefono opcional">
-                          <div class="input-group-append">
-                            <div class="input-group-text">
-                              <span class="fas fa-phone-square-alt"></span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-12">
-                          <div class="input-group mb-3">
-                            <input type="text" name="direccion" class="form-control" placeholder="Direccion">
-                            <div class="input-group-append">
-                              <div class="input-group-text">
-                                <span class="fas fa-street-view"></span>
+                            <div class="col-12">
+                              <div class="form-group">
+                                <label>Seleccione producto</label>
+                                <select id="seleccion-producto" class="form-control" name="producto-compra">
+                                  <option>poker</option>
+                                  <option>Aguardiente</option>
+                                  <option>Whiskey</option>
+                                  <option>vodka</option>
+                                  <option>red Label</option>
+                                </select>
                               </div>
                             </div>
-                          </div>
-                        </div>
-                        <div class="col-12">
-                          <div class="input-group mb-3">
-                            <input type="text" name="Nit" class="form-control" placeholder="Nit">
-                            <div class="input-group-append">
-                              <div class="input-group-text">
-                                <span class="fas fa-street-view"></span>
+                            <div class="col-12 input-group mb-3">
+                              <input id="unidades" type="number" name="unidades" class="form-control" placeholder="Unidades">
+                            </div>
+                            <div class="col-6 offset-md-6 input-group mb-3 d-flex justify-content-md-end">
+                              <button id="agregar-producto" type="button" name="agregar-producto" class="btn btn-outline-dark">
+                                Añadir producto
+                                <i class="fas fa-plus-circle"></i>
+                              </button>
+                            </div>
+                            <div class="col-12">
+                              <div class="form-group">
+                                <label>Seleccione Proveedor</label>
+                                <select class="form-control" name="proveedor">
+                                  <option>Distribuidora licores</option>
+                                  <option>Licores cundinamarca</option>
+                                  <option>Proveedor 3</option>
+                                  <option>Licores de calidad</option>
+                                  <option>Los mejores aguardientes</option>
+                                </select>
                               </div>
                             </div>
+                            <div class="col-12">
+                              <input class="btn btn-success btn-block" type="submit" value="Registrar Compra">
+                            </div>
                           </div>
-                        </div>
+                        </form>
                       </div>
-                      <div class="row">
-                        <!-- /.col -->
-                        <div class="col-12">
-                          <button type="submit" class="btn btn-primary btn-block">Registrarme</button>
-                        </div>
-                        <!-- /.col -->
-                      </div>
-                    </form>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <!-- / Modal para registro de proveedores -->
-      <!-- tabla Proveedores -->
-      <div class="content">
-        <div class="container-fluid">
-          <div class="row mb-2">
-            <div class="col">
-              <div class="card">
-                <div class="card-header">
-                  <div class="row">
-                    <div class="col-12 col-md-6">
-                      <h2>Lista general proveedores</h2>
-                    </div>
-                    <div class="col-12 col-sm-6 d-flex align-items-center justify-content-md-end">
-                      <a class="btn btn-success mr-2 btn-sm" href="#" data-toggle="modal"
-                        data-target="#registro-cliente">Registrar Proveedor</a>
-                      <!-- SEARCH FORM -->
-                      <form class="form-inline">
-                        <div class="input-group input-group-sm">
-                          <input class="form-control form-control-navbar" type="search" placeholder="Buscar"
-                            aria-label="buscar">
-                          <div class="input-group-append">
-                            <button style="background-color: rgb(207, 207, 207);" class="btn btn-navbar" type="submit">
-                              <i class="fas fa-search"></i>
-                            </button>
-                          </div>
+          <!-- / Modal para registro de nueva compra -->
+          <!-- tabla compras -->
+          <div class="content">
+            <div class="container-fluid">
+              <div class="row mb-2">
+                <div class="col">
+                  <div class="card">
+                    <div class="card-header">
+                      <div class="row">
+                        <div class="col-12 col-md-6">
+                          <h2 id="tabla-compras">Lista general compras</h2>
                         </div>
+                        <div class="col-12 col-sm-6 d-flex align-items-center justify-content-md-end">
+                          <a class="btn btn-success mr-2 btn-sm" href="#" data-toggle="modal"
+                            data-target="#registro-compra">Registrar compra</a>
+                          <!-- SEARCH FORM -->
+                          <form class="form-inline">
+                            <div class="input-group input-group-sm">
+                              <input class="form-control form-control-navbar" type="search" placeholder="Buscar"
+                                aria-label="buscar">
+                              <div class="input-group-append">
+                                <button style="background-color: rgb(207, 207, 207);" class="btn btn-navbar"
+                                  type="submit">
+                                  <i class="fas fa-search"></i>
+                                </button>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body">
+                      <table class="table table-bordered table-hover table-responsive-md">
+                        <thead class="text-center">
+                          <tr>
+                            <th>Fecha compra</th>
+                            <th>Proveedor</th>
+                            <th>Nit Proveedor</th>
+                            <th>Subtotal</th>
+                            <th>Iva</th>
+                            <th>total</th>
+                            <th>Detalles</th>
+                            <th>Ajustes</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>23-04-2020</td>
+                            <td>Licores cundinamarca</td>
+                            <td>213124213</td>
+                            <td>183000</td>
+                            <td>18323</td>
+                            <td>201323</td>
+                            <td>
+                              <button type="submit" class="btn btn-outline-success btn-sm">
+                                Detalles
+                                <i class="fas fa-search"></i>
+                              </button>
+                            </td>
+                            <td>
+                              <form action="" class="d-flex justify-content-around">
+                                <button type="submit" class="btn btn-outline-danger btn-sm">
+                                  <i class="fas fa-user-times"></i>
+                                </button>
+                                <button type="submit" class="btn btn-warning btn-sm">
+                                  <i class="far fa-edit"></i>
+                                </button>
+                              </form>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>23-04-2020</td>
+                            <td>Licores cundinamarca</td>
+                            <td>213124213</td>
+                            <td>183000</td>
+                            <td>18323</td>
+                            <td>201323</td>
+                            <td>
+                              <button type="submit" class="btn btn-outline-success btn-sm">
+                                Detalles
+                                <i class="fas fa-search"></i>
+                              </button>
+                            </td>
+                            <td>
+                              <form action="" class="d-flex justify-content-around">
+                                <button type="submit" class="btn btn-outline-danger btn-sm">
+                                  <i class="fas fa-user-times"></i>
+                                </button>
+                                <button type="submit" class="btn btn-warning btn-sm">
+                                  <i class="far fa-edit"></i>
+                                </button>
+                              </form>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>23-04-2020</td>
+                            <td>Licores cundinamarca</td>
+                            <td>213124213</td>
+                            <td>183000</td>
+                            <td>18323</td>
+                            <td>201323</td>
+                            <td>
+                              <button type="submit" class="btn btn-outline-success btn-sm">
+                                Detalles
+                                <i class="fas fa-search"></i>
+                              </button>
+                            </td>
+                            <td>
+                              <form action="" class="d-flex justify-content-around">
+                                <button type="submit" class="btn btn-outline-danger btn-sm">
+                                  <i class="fas fa-user-times"></i>
+                                </button>
+                                <button type="submit" class="btn btn-warning btn-sm">
+                                  <i class="far fa-edit"></i>
+                                </button>
+                              </form>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>23-04-2020</td>
+                            <td>Licores cundinamarca</td>
+                            <td>213124213</td>
+                            <td>183000</td>
+                            <td>18323</td>
+                            <td>201323</td>
+                            <td>
+                              <button type="submit" class="btn btn-outline-success btn-sm">
+                                Detalles
+                                <i class="fas fa-search"></i>
+                              </button>
+                            </td>
+                            <td>
+                              <form action="" class="d-flex justify-content-around">
+                                <button type="submit" class="btn btn-outline-danger btn-sm">
+                                  <i class="fas fa-user-times"></i>
+                                </button>
+                                <button type="submit" class="btn btn-warning btn-sm">
+                                  <i class="far fa-edit"></i>
+                                </button>
+                              </form>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>23-04-2020</td>
+                            <td>Licores cundinamarca</td>
+                            <td>213124213</td>
+                            <td>183000</td>
+                            <td>18323</td>
+                            <td>201323</td>
+                            <td>
+                              <button type="submit" class="btn btn-outline-success btn-sm">
+                                Detalles
+                                <i class="fas fa-search"></i>
+                              </button>
+                            </td>
+                            <td>
+                              <form action="" class="d-flex justify-content-around">
+                                <button type="submit" class="btn btn-outline-danger btn-sm">
+                                  <i class="fas fa-user-times"></i>
+                                </button>
+                                <button type="submit" class="btn btn-warning btn-sm">
+                                  <i class="far fa-edit"></i>
+                                </button>
+                              </form>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>23-04-2020</td>
+                            <td>Licores cundinamarca</td>
+                            <td>213124213</td>
+                            <td>183000</td>
+                            <td>18323</td>
+                            <td>201323</td>
+                            <td>
+                              <button type="submit" class="btn btn-outline-success btn-sm">
+                                Detalles
+                                <i class="fas fa-search"></i>
+                              </button>
+                            </td>
+                            <td>
+                              <form action="" class="d-flex justify-content-around">
+                                <button type="submit" class="btn btn-outline-danger btn-sm">
+                                  <i class="fas fa-user-times"></i>
+                                </button>
+                                <button type="submit" class="btn btn-warning btn-sm">
+                                  <i class="far fa-edit"></i>
+                                </button>
+                              </form>
+                            </td>
+                          </tr>
+                      </table>
+                    </div>
+                    <!-- /.card-body -->
+                  </div>
+                </div>
+              </div>
+            </div><!-- /.container-fluid -->
+          </div>
+          <!--/tabla compras -->
+          <!-- Modal para registro de proveedores -->
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="modal fade" id="registro-cliente" tabindex="-1" role="dialog"
+                  aria-labelledby="registro-cliente" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h2 class="modal-tittle mr-2">Nuevo Proveedor
+                          <span class="fas fa-plus-square"></span>
+                        </h2>
+                        <button class="close" data-dismiss="modal" aria-label="cerrar">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <form action="#" method="post">
+                          <div class="row">
+                            <div class="col-12 input-group mb-3">
+                              <input type="text" name="nombre" class="form-control" placeholder="Nombre">
+                              <div class="input-group-append">
+                                <div class="input-group-text">
+                                  <span class="fas fa-user"></span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-12 input-group mb-3">
+                              <input type="text" name="representante" class="form-control" placeholder="Representante">
+                              <div class="input-group-append">
+                                <div class="input-group-text">
+                                  <span class="fas fa-user"></span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-12 input-group mb-3">
+                              <input type="text" name="celular" class="form-control" placeholder="celular">
+                              <div class="input-group-append">
+                                <div class="input-group-text">
+                                  <span class="fas fa-phone-square-alt"></span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-12 input-group mb-3">
+                              <input type="text" name="telopcional" class="form-control"
+                                placeholder="telefono opcional">
+                              <div class="input-group-append">
+                                <div class="input-group-text">
+                                  <span class="fas fa-phone-square-alt"></span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-12">
+                              <div class="input-group mb-3">
+                                <input type="text" name="direccion" class="form-control" placeholder="Direccion">
+                                <div class="input-group-append">
+                                  <div class="input-group-text">
+                                    <span class="fas fa-street-view"></span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <div class="input-group mb-3">
+                                <input type="text" name="Nit" class="form-control" placeholder="Nit">
+                                <div class="input-group-append">
+                                  <div class="input-group-text">
+                                    <span class="fas fa-street-view"></span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <!-- /.col -->
+                            <div class="col-12">
+                              <button type="submit" class="btn btn-primary btn-block">Registrarme</button>
+                            </div>
+                            <!-- /.col -->
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- / Modal para registro de proveedores -->
+          <!-- tabla Proveedores -->
+          <div class="content">
+            <div class="container-fluid">
+              <div class="row mb-2">
+                <div class="col">
+                  <div class="card">
+                    <div class="card-header">
+                      <div class="row">
+                        <div class="col-12 col-md-6">
+                          <h2>Lista general proveedores</h2>
+                        </div>
+                        <div class="col-12 col-sm-6 d-flex align-items-center justify-content-md-end">
+                          <a class="btn btn-success mr-2 btn-sm" href="#" data-toggle="modal"
+                            data-target="#registro-cliente">Registrar Proveedor</a>
+                          <!-- SEARCH FORM -->
+                          <form class="form-inline">
+                            <div class="input-group input-group-sm">
+                              <input class="form-control form-control-navbar" type="search" placeholder="Buscar"
+                                aria-label="buscar">
+                              <div class="input-group-append">
+                                <button style="background-color: rgb(207, 207, 207);" class="btn btn-navbar"
+                                  type="submit">
+                                  <i class="fas fa-search"></i>
+                                </button>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body">
+                      <table id="example2" class="table table-bordered table-hover table-responsive-md">
+                        <thead class="text-center">
+                          <tr>
+                            <th>Nombre</th>
+                            <th>Representante</th>
+                            <th>Direccion</th>
+                            <th>Celular</th>
+                            <th>Telefono opc</th>
+                            <th>Nit</th>
+                            <th>Ajustes</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Licores cundinamarca</td>
+                            <td>Pedro mojica</td>
+                            <td>Calle 22 14 49</td>
+                            <td>3245322312</td>
+                            <td>2343232</td>
+                            <td>6433211</td>
+                            <td>
+                              <form action="" class="d-flex justify-content-around">
+                                <button type="submit" class="btn btn-outline-danger btn-sm">
+                                  <i class="fas fa-user-times"></i>
+                                </button>
+                                <button type="submit" class="btn btn-warning btn-sm">
+                                  <i class="far fa-edit"></i>
+                                </button>
+                              </form>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Distri licores</td>
+                            <td>Andres Rodriguez</td>
+                            <td>Calle 22 14 18</td>
+                            <td>3245322312</td>
+                            <td>N/A</td>
+                            <td>6433211</td>
+                            <td>
+                              <form action="" class="d-flex justify-content-around">
+                                <button type="submit" class="btn btn-outline-danger btn-sm">
+                                  <i class="fas fa-user-times"></i>
+                                </button>
+                                <button type="submit" class="btn btn-warning btn-sm">
+                                  <i class="far fa-edit"></i>
+                                </button>
+                              </form>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Licores por mayor</td>
+                            <td>Daniela Rojas</td>
+                            <td>Calle 19 14 26</td>
+                            <td>3245322312</td>
+                            <td>2324222</td>
+                            <td>6433211</td>
+                            <td>
+                              <form action="" class="d-flex justify-content-around">
+                                <button type="submit" class="btn btn-outline-danger btn-sm">
+                                  <i class="fas fa-user-times"></i>
+                                </button>
+                                <button type="submit" class="btn btn-warning btn-sm">
+                                  <i class="far fa-edit"></i>
+                                </button>
+                              </form>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Surti Tragos</td>
+                            <td>Pedro Martinez</td>
+                            <td>Calle 21 17 16</td>
+                            <td>3245322312</td>
+                            <td>N/A</td>
+                            <td>6433211</td>
+                            <td>
+                              <form action="" class="d-flex justify-content-around">
+                                <button type="submit" class="btn btn-outline-danger btn-sm">
+                                  <i class="fas fa-user-times"></i>
+                                </button>
+                                <button type="submit" class="btn btn-warning btn-sm">
+                                  <i class="far fa-edit"></i>
+                                </button>
+                              </form>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>Licores Bogota S.A</td>
+                            <td>Danilo Mojica</td>
+                            <td>Calle 28 14 16</td>
+                            <td>3245322312</td>
+                            <td>N/A</td>
+                            <td>6433211</td>
+                            <td>
+                              <form action="" class="d-flex justify-content-around">
+                                <button type="submit" class="btn btn-outline-danger btn-sm">
+                                  <i class="fas fa-user-times"></i>
+                                </button>
+                                <button type="submit" class="btn btn-warning btn-sm">
+                                  <i class="far fa-edit"></i>
+                                </button>
+                              </form>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>Distribuidora</td>
+                            <td>Mojica</td>
+                            <td>Calle 22 14 16</td>
+                            <td>3245322312</td>
+                            <td>2343454</td>
+                            <td>6433211</td>
+                            <td>
+                              <form action="" class="d-flex justify-content-around">
+                                <button type="submit" class="btn btn-outline-danger btn-sm">
+                                  <i class="fas fa-user-times"></i>
+                                </button>
+                                <button type="submit" class="btn btn-warning btn-sm">
+                                  <i class="far fa-edit"></i>
+                                </button>
+                              </form>
+                            </td>
+                          </tr>
+                      </table>
+                    </div>
+                    <!-- /.card-body -->
+                  </div>
+                </div>
+              </div>
+            </div><!-- /.container-fluid -->
+          </div>
+          <!--/tabla Proveedores -->
+          <!-- Modal para registro de nuevo producto -->
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="modal fade" id="registro-producto" tabindex="-1" role="dialog"
+                  aria-labelledby="registro-producto" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h2 class="modal-tittle mr-2">Nuevo Producto
+                          <span class="fas fa-plus-square"></span>
+                        </h2>
+                        <button class="close" data-dismiss="modal" aria-label="cerrar">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <form action="#" method="post">
+                          <div class="row">
+                            <div class="col-12 input-group mb-3">
+                              <input type="text" name="nombre-producto" class="form-control"
+                                placeholder="Nombre Producto">
+                              <div class="input-group-append">
+                                <div class="input-group-text">
+                                  <span class="fas fa-beer"></span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <div class="form-group">
+                                <label>Seleccione Proveedor</label>
+                                <select class="form-control" name="proveedor">
+                                  <option>Distribuidora licores</option>
+                                  <option>Licores cundinamarca</option>
+                                  <option>Proveedor 3</option>
+                                  <option>Licores de calidad</option>
+                                  <option>Los mejores aguardientes</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-12 input-group mb-3">
+                              <input type="text" name="precio-venta" class="form-control" placeholder="Precio venta">
+                              <div class="input-group-append">
+                                <div class="input-group-text">
+                                  <span class="fas fa-money-bill-alt"></span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <div class="form-group">
+                                <label>Seleccione la categoria</label>
+                                <select class="form-control" name="categoria_producto">
+                                  <option>Cervezas</option>
+                                  <option>Whiskey</option>
+                                  <option>Ron</option>
+                                  <option>Vodka</option>
+                                  <option>Aguardiente</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <div class="form-group">
+                                <label>Seleccione la presentacion</label>
+                                <select class="form-control" name="categoria_producto">
+                                  <option>1/4</option>
+                                  <option>Media</option>
+                                  <option>Botella</option>
+                                  <option>Garrafa</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-12 input-group mb-3">
+                              <input type="text" name="unidades" class="form-control" placeholder="unidades">
+                              <div class="input-group-append">
+                                <div class="input-group-text">
+                                  <span class="fas fa-plus"></span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <input class="btn btn-success btn-block" type="submit" value="Registrar Producto">
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- / Modal para registro de productos -->
+          <!-- tabla productos -->
+          <div class="content">
+            <div class="container-fluid">
+              <div class="row mb-2">
+                <div class="col">
+                  <div class="card">
+                    <div class="card-header">
+                      <div class="row">
+                        <div class="col-12 col-md-6">
+                          <h2 id="tabla-productos">Lista general productos</h2>
+                        </div>
+                        <div class="col-12 col-sm-6 d-flex align-items-center justify-content-md-end">
+                          <a class="btn btn-success mr-2 btn-sm" href="#" data-toggle="modal"
+                            data-target="#registro-producto">Registrar producto</a>
+                          <!-- SEARCH FORM -->
+                          <form class="form-inline">
+                            <div class="input-group input-group-sm">
+                              <input class="form-control form-control-navbar" type="search" placeholder="Buscar"
+                                aria-label="buscar">
+                              <div class="input-group-append">
+                                <button style="background-color: rgb(207, 207, 207);" class="btn btn-navbar"
+                                  type="submit">
+                                  <i class="fas fa-search"></i>
+                                </button>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body">
+                      <table class="table table-bordered table-hover table-responsive-md">
+                        <thead class="text-center">
+                          <tr>
+                            <th>Nombre Producto</th>
+                            <th>Proveedor</th>
+                            <th>Precio venta</th>
+                            <th>Categoria Producto</th>
+                            <th>unidades</th>
+                            <th>Presentación</th>
+                            <th>Ajustes</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Poker 330</td>
+                            <td>Licores cundinamarca</td>
+                            <td>23.000</td>
+                            <td>Cervezas</td>
+                            <td>4</td>
+                            <td>Botella</td>
+                            <td>
+                              <form action="" class="d-flex justify-content-around">
+                                <button type="submit" class="btn btn-outline-danger btn-sm">
+                                  <i class="fas fa-user-times"></i>
+                                </button>
+                                <button type="submit" class="btn btn-warning btn-sm">
+                                  <i class="far fa-edit"></i>
+                                </button>
+                              </form>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Poker 330</td>
+                            <td>Licores cundinamarca</td>
+                            <td>23.000</td>
+                            <td>Cervezas</td>
+                            <td>4</td>
+                            <td>Botella</td>
+                            <td>
+                              <form action="" class="d-flex justify-content-around">
+                                <button type="submit" class="btn btn-outline-danger btn-sm">
+                                  <i class="fas fa-user-times"></i>
+                                </button>
+                                <button type="submit" class="btn btn-warning btn-sm">
+                                  <i class="far fa-edit"></i>
+                                </button>
+                              </form>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Poker 330</td>
+                            <td>Licores cundinamarca</td>
+                            <td>23.000</td>
+                            <td>Cervezas</td>
+                            <td>4</td>
+                            <td>Botella</td>
+                            <td>
+                              <form action="" class="d-flex justify-content-around">
+                                <button type="submit" class="btn btn-outline-danger btn-sm">
+                                  <i class="fas fa-user-times"></i>
+                                </button>
+                                <button type="submit" class="btn btn-warning btn-sm">
+                                  <i class="far fa-edit"></i>
+                                </button>
+                              </form>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Poker 330</td>
+                            <td>Licores cundinamarca</td>
+                            <td>23.000</td>
+                            <td>Cervezas</td>
+                            <td>4</td>
+                            <td>Botella</td>
+                            <td>
+                              <form action="" class="d-flex justify-content-around">
+                                <button type="submit" class="btn btn-outline-danger btn-sm">
+                                  <i class="fas fa-user-times"></i>
+                                </button>
+                                <button type="submit" class="btn btn-warning btn-sm">
+                                  <i class="far fa-edit"></i>
+                                </button>
+                              </form>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Poker 330</td>
+                            <td>Licores cundinamarca</td>
+                            <td>23.000</td>
+                            <td>Cervezas</td>
+                            <td>4</td>
+                            <td>Botella</td>
+                            <td>
+                              <form action="" class="d-flex justify-content-around">
+                                <button type="submit" class="btn btn-outline-danger btn-sm">
+                                  <i class="fas fa-user-times"></i>
+                                </button>
+                                <button type="submit" class="btn btn-warning btn-sm">
+                                  <i class="far fa-edit"></i>
+                                </button>
+                              </form>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Poker 330</td>
+                            <td>Licores cundinamarca</td>
+                            <td>23.000</td>
+                            <td>Cervezas</td>
+                            <td>4</td>
+                            <td>Botella</td>
+                            <td>
+                              <form action="" class="d-flex justify-content-around">
+                                <button type="submit" class="btn btn-outline-danger btn-sm">
+                                  <i class="fas fa-user-times"></i>
+                                </button>
+                                <button type="submit" class="btn btn-warning btn-sm">
+                                  <i class="far fa-edit"></i>
+                                </button>
+                              </form>
+                            </td>
+                          </tr>
+                      </table>
+                    </div>
+                    <!-- /.card-body -->
+                  </div>
+                </div>
+              </div>
+            </div><!-- /.container-fluid -->
+          </div>
+          <!--/tabla productos -->
+          <!-- Modal para registro de nueva categoria -->
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="modal fade" id="registro-categoria" tabindex="-1" role="dialog"
+                  aria-labelledby="registro-producto" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h2 class="modal-tittle mr-2">Nuevo categoria
+                          <span class="fas fa-plus-square"></span>
+                        </h2>
+                        <button class="close" data-dismiss="modal" aria-label="cerrar">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <form action="#" method="post">
+                          <div class="row">
+                            <div class="col-12 input-group mb-3">
+                              <input type="text" name="nombre-producto" class="form-control"
+                                placeholder="Nombre categoria">
+                              <div class="input-group-append">
+                                <div class="input-group-text">
+                                  <span class="fas fa-beer"></span>
+                                </div>
+                              </div>
+                            </div>
+                            <input class="btn btn-success btn-block" type="submit" value="Registrar categoria">
+                          </div>
+                      </div>
                       </form>
                     </div>
                   </div>
                 </div>
-                <!-- /.card-header -->
-                <div class="card-body">
-                  <table id="example2" class="table table-bordered table-hover table-responsive-md">
-                    <thead class="text-center">
-                      <tr>
-                        <th>Nombre</th>
-                        <th>Representante</th>
-                        <th>Direccion</th>
-                        <th>Celular</th>
-                        <th>Telefono opc</th>
-                        <th>Nit</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Licores cundinamarca</td>
-                        <td>Pedro mojica</td>
-                        <td>Calle 22 14 49</td>
-                        <td>3245322312</td>
-                        <td>2343232</td>
-                        <td>6433211</td>
-                        <td>
-                          <form action="" class="d-flex justify-content-around">
-                            <button type="submit" class="btn btn-outline-danger btn-sm">
-                              <i class="fas fa-user-times"></i>
-                            </button>
-                            <button type="submit" class="btn btn-warning btn-sm">
-                              <i class="far fa-edit"></i>
-                            </button>
-                          </form>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>Distri licores</td>
-                        <td>Andres Rodriguez</td>
-                        <td>Calle 22 14 18</td>
-                        <td>3245322312</td>
-                        <td>N/A</td>
-                        <td>6433211</td>
-                        <td>
-                          <form action="" class="d-flex justify-content-around">
-                            <button type="submit" class="btn btn-outline-danger btn-sm">
-                              <i class="fas fa-user-times"></i>
-                            </button>
-                            <button type="submit" class="btn btn-warning btn-sm">
-                              <i class="far fa-edit"></i>
-                            </button>
-                          </form>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>Licores por mayor</td>
-                        <td>Daniela Rojas</td>
-                        <td>Calle 19 14 26</td>
-                        <td>3245322312</td>
-                        <td>2324222</td>
-                        <td>6433211</td>
-                        <td>
-                          <form action="" class="d-flex justify-content-around">
-                            <button type="submit" class="btn btn-outline-danger btn-sm">
-                              <i class="fas fa-user-times"></i>
-                            </button>
-                            <button type="submit" class="btn btn-warning btn-sm">
-                              <i class="far fa-edit"></i>
-                            </button>
-                          </form>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>Surti Tragos</td>
-                        <td>Pedro Martinez</td>
-                        <td>Calle 21 17 16</td>
-                        <td>3245322312</td>
-                        <td>N/A</td>
-                        <td>6433211</td>
-                        <td>
-                          <form action="" class="d-flex justify-content-around">
-                            <button type="submit" class="btn btn-outline-danger btn-sm">
-                              <i class="fas fa-user-times"></i>
-                            </button>
-                            <button type="submit" class="btn btn-warning btn-sm">
-                              <i class="far fa-edit"></i>
-                            </button>
-                          </form>
-                        </td>
-                      </tr>
-
-                      <tr>
-                        <td>Licores Bogota S.A</td>
-                        <td>Danilo Mojica</td>
-                        <td>Calle 28 14 16</td>
-                        <td>3245322312</td>
-                        <td>N/A</td>
-                        <td>6433211</td>
-                        <td>
-                          <form action="" class="d-flex justify-content-around">
-                            <button type="submit" class="btn btn-outline-danger btn-sm">
-                              <i class="fas fa-user-times"></i>
-                            </button>
-                            <button type="submit" class="btn btn-warning btn-sm">
-                              <i class="far fa-edit"></i>
-                            </button>
-                          </form>
-                        </td>
-                      </tr>
-
-                      <tr>
-                        <td>Distribuidora</td>
-                        <td>Mojica</td>
-                        <td>Calle 22 14 16</td>
-                        <td>3245322312</td>
-                        <td>2343454</td>
-                        <td>6433211</td>
-                        <td>
-                          <form action="" class="d-flex justify-content-around">
-                            <button type="submit" class="btn btn-outline-danger btn-sm">
-                              <i class="fas fa-user-times"></i>
-                            </button>
-                            <button type="submit" class="btn btn-warning btn-sm">
-                              <i class="far fa-edit"></i>
-                            </button>
-                          </form>
-                        </td>
-                      </tr>
-                  </table>
-                </div>
-                <!-- /.card-body -->
               </div>
             </div>
           </div>
-        </div><!-- /.container-fluid -->
+        </div>
+        <!-- / Modal para registro de nueva categoria -->
+        <!-- tabla categorias -->
+        <div class="content">
+          <div class="container-fluid">
+            <div class="row mb-2">
+              <div class="col">
+                <div class="card">
+                  <div class="card-header">
+                    <div class="row">
+                      <div class="col-12 col-md-6">
+                        <h2 id="tabla-categorias">Categorias productos</h2>
+                      </div>
+                      <div class="col-12 col-sm-6 d-flex align-items-center justify-content-md-end">
+                        <a class="btn btn-success mr-2 btn-sm" href="#" data-toggle="modal"
+                          data-target="#registro-categoria">Nueva categoria</a>
+                        <!-- SEARCH FORM -->
+                        <form class="form-inline">
+                          <div class="input-group input-group-sm">
+                            <input class="form-control form-control-navbar" type="search" placeholder="Buscar"
+                              aria-label="buscar">
+                            <div class="input-group-append">
+                              <button style="background-color: rgb(207, 207, 207);" class="btn btn-navbar"
+                                type="submit">
+                                <i class="fas fa-search"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /.card-header -->
+                  <div class="card-body">
+                    <table class="table table-bordered table-hover table-responsive-md">
+                      <thead class="text-center">
+                        <tr>
+                          <th>id categoria</th>
+                          <th>nombre categoria</th>
+                          <th>Ajustes</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>Whiskey</td>
+                          <td>
+                            <form action="" class="d-flex justify-content-around">
+                              <button type="submit" class="btn btn-outline-danger btn-sm">
+                                <i class="fas fa-user-times"></i>
+                              </button>
+                              <button type="submit" class="btn btn-warning btn-sm">
+                                <i class="far fa-edit"></i>
+                              </button>
+                            </form>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>1</td>
+                          <td>Whiskey</td>
+                          <td>
+                            <form action="" class="d-flex justify-content-around">
+                              <button type="submit" class="btn btn-outline-danger btn-sm">
+                                <i class="fas fa-user-times"></i>
+                              </button>
+                              <button type="submit" class="btn btn-warning btn-sm">
+                                <i class="far fa-edit"></i>
+                              </button>
+                            </form>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>1</td>
+                          <td>Whiskey</td>
+                          <td>
+                            <form action="" class="d-flex justify-content-around">
+                              <button type="submit" class="btn btn-outline-danger btn-sm">
+                                <i class="fas fa-user-times"></i>
+                              </button>
+                              <button type="submit" class="btn btn-warning btn-sm">
+                                <i class="far fa-edit"></i>
+                              </button>
+                            </form>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>1</td>
+                          <td>Whiskey</td>
+                          <td>
+                            <form action="" class="d-flex justify-content-around">
+                              <button type="submit" class="btn btn-outline-danger btn-sm">
+                                <i class="fas fa-user-times"></i>
+                              </button>
+                              <button type="submit" class="btn btn-warning btn-sm">
+                                <i class="far fa-edit"></i>
+                              </button>
+                            </form>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>1</td>
+                          <td>Whiskey</td>
+                          <td>
+                            <form action="" class="d-flex justify-content-around">
+                              <button type="submit" class="btn btn-outline-danger btn-sm">
+                                <i class="fas fa-user-times"></i>
+                              </button>
+                              <button type="submit" class="btn btn-warning btn-sm">
+                                <i class="far fa-edit"></i>
+                              </button>
+                            </form>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>1</td>
+                          <td>Whiskey</td>
+                          <td>
+                            <form action="" class="d-flex justify-content-around">
+                              <button type="submit" class="btn btn-outline-danger btn-sm">
+                                <i class="fas fa-user-times"></i>
+                              </button>
+                              <button type="submit" class="btn btn-warning btn-sm">
+                                <i class="far fa-edit"></i>
+                              </button>
+                            </form>
+                          </td>
+                        </tr>
+                    </table>
+                  </div>
+                  <!-- /.card-body -->
+                </div>
+              </div>
+            </div>
+          </div><!-- /.container-fluid -->
+        </div>
+        <!--/tabla categorias -->
       </div>
-      </div><!-- /.container-fluid -->
     </div>
-    <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
 
@@ -427,21 +1133,24 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <footer class="main-footer">
     <!-- To the right -->
     <div class="float-right d-none d-sm-inline">
-      <a target="blank" href="https://www.facebook.com/licoresElgatoEC"><i class="fab fa-facebook"></i></i></a> 
+      <a target="blank" href="https://www.facebook.com/licoresElgatoEC"><i class="fab fa-facebook"></i></i></a>
     </div>
     <!-- Default to the left -->
     <strong> SISTEMA INFORMACIÓN LICORES EL GATO</strong>
   </footer>
-</div>
-<!-- ./wrapper -->
+  </div>
+  <!-- ./wrapper -->
 
-<!-- REQUIRED SCRIPTS -->
+  <!-- REQUIRED SCRIPTS -->
 
-<!-- jQuery -->
-<script src="../plugins/jquery/jquery.min.js"></script>
-<!-- Bootstrap 4 -->
-<script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-<!-- AdminLTE App -->
-<script src="../dist/js/adminlte.min.js"></script>
+  <!-- jQuery -->
+  <script src="../plugins/jquery/jquery.min.js"></script>
+  <!-- Bootstrap 4 -->
+  <script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- AdminLTE App -->
+  <script src="../dist/js/adminlte.min.js"></script>
+  <!-- js inventarios -->
+  <script src="../js/inventory.js"></script>
 </body>
+
 </html>
