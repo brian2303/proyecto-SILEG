@@ -41,6 +41,7 @@ function validacionGeneral(e) {
     redireccionar();
 }
 formularioInicioSesion.addEventListener('submit',validacionGeneral);
+
 //FORMULARIO INCIO SESIÓN
 
 //REDIRECCIONAR VISTAS

@@ -1,8 +1,4 @@
 <!DOCTYPE html>
-<!--
-This is a starter template page. Use this page to start your new project from
-scratch. This page gets rid of all links and provides the needed markup only.
--->
 <html lang="en">
 
 <head>
@@ -23,9 +19,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
 </head>
 
 <body class="hold-transition sidebar-mini">
+  <!-- /.WRAPPER -->
   <div class="wrapper">
-
-    <!-- Navbar -->
+    <!-- HEADER -->
     <nav class="main-header navbar navbar-expand navbar-white navbar-light">
       <!-- Left navbar links -->
       <ul class="navbar-nav">
@@ -33,19 +29,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
         </li>
       </ul>
-
-      <!-- SEARCH FORM -->
-      <form class="form-inline ml-3">
-        <div class="input-group input-group-sm">
-          <input class="form-control form-control-navbar" type="search" placeholder="Buscar" aria-label="buscar">
-          <div class="input-group-append">
-            <button class="btn btn-navbar" type="submit">
-              <i class="fas fa-search"></i>
-            </button>
-          </div>
-        </div>
-      </form>
-
       <!-- Right navbar links -->
       <ul class="navbar-nav ml-auto">
         <!-- Notifications Dropdown Menu -->
@@ -71,29 +54,33 @@ scratch. This page gets rid of all links and provides the needed markup only.
         </li>
       </ul>
     </nav>
-    <!-- /.navbar -->
-
-    <!-- Main Sidebar Container -->
+    <!-- /.HEADER -->
+    <!-- SIDEBAR MENU IZQUIERDO -->
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
-      <!-- Brand Logo -->
+      <!-- LOGO Y NOMBRE DEL SISTEMA-->
       <a href="#" class="brand-link">
         <img src="../img/beer.png" alt="SILEG Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
         <span class="brand-text font-weight-light">SILEG</span>
       </a>
 
-      <!-- Sidebar -->
+      <!-- MENU DE OPCIONES DE LOS MODULOS -->
       <div class="sidebar">
-        <!-- Sidebar user panel (optional) -->
+        <!-- LOGO NOMBRE USUARIO Y RELOJ -->
         <div class="user-panel mt-3 pb-3 mb-3 d-flex">
           <div class="image">
             <img src="../img/bri.jpg" class="img-circle elevation-2" alt="User Image">
           </div>
           <div class="info">
             <a href="#" class="d-block">Brian Olarte</a>
+            <span class="d-block ml-md-2" style="color:white;">
+              <strong id="horas"></strong>
+              <strong id="minutos"></strong>
+              <strong id="segundos"></strong>
+            </span>
           </div>
         </div>
-
-        <!-- Sidebar Menu -->
+        <!-- LOGO NOMBRE USUARIO Y RELOJ -->
+        <!-- SELECCION POR MODULO -->
         <nav class="mt-2">
           <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
             <!-- Add icons to the links using the .nav-icon class
@@ -135,14 +122,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
             </li>
           </ul>
         </nav>
-        <!-- /.sidebar-menu -->
+        <!-- /.SELECCION POR MODULO -->
       </div>
-      <!-- /.sidebar -->
+      <!-- /.MENU DE OPCIONES DE LOS MODULOS -->
     </aside>
-
-    <!-- Content Wrapper. Contains page content -->
+    <!-- /.SIDEBAR MENU IZQUIERDO -->
+    <!-- CONTENIDO PRINCIPAL DE LA PAGINA -->
     <div class="content-wrapper">
-      <!-- Content Header (Page header) -->
+      <!-- CONTENIDO HEADER SECCION PRINCIPAL-->
       <div class="content-header">
         <div class="container-fluid">
           <div class="row mb-2">
@@ -152,14 +139,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <div class="col-12 col-md-6 d-flex justify-content-md-end align-items-center mt-sm-2 mt-md-0">
               <a class="btn btn-dark btn-sm" href="#tabla-productos">Productos</a>
               <a class="ml-2 btn btn-dark btn-sm" href="#tabla-categorias">Categorias</a>
-              <a class="ml-2 btn btn-dark btn-sm" href="#tabla-compras">Compras</a>
+              <a class="ml-2 btn btn-dark btn-sm" href="#tabla-proveedores">Proveedores</a>
             </div>
           </div>
         </div>
       </div>
-      <!-- /.content-header -->
+      <!-- /.CONTENIDO HEADER SECCION PRINCIPAL -->
 
-      <!-- Main content -->
+      <!-- SECCION PRINCIPAL DE TABLAS Y FORMULARIOS -->
       <div class="content">
         <div class="container-fluid">
           <!-- Modal para registro de nueva compra -->
@@ -180,7 +167,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                       </div>
                       <div class="modal-body">
                         <form action="#" method="post">
-                          <div class="row">
+                          <div class="row" id="formulario-compra">
                             <div class="col-12 input-group mb-3">
                               <input type="date" name="fecha-compra" class="form-control" placeholder="Fecha compra">
                             </div>
@@ -197,14 +184,25 @@ scratch. This page gets rid of all links and provides the needed markup only.
                               </div>
                             </div>
                             <div class="col-12 input-group mb-3">
-                              <input id="unidades" type="number" name="unidades" class="form-control" placeholder="Unidades">
+                              <input id="unidades" type="number" name="unidades" class="form-control"
+                                placeholder="Unidades">
                             </div>
                             <div class="col-6 offset-md-6 input-group mb-3 d-flex justify-content-md-end">
-                              <button id="agregar-producto" type="button" name="agregar-producto" class="btn btn-outline-dark">
+                              <button id="agregar-producto" type="button" name="agregar-producto"
+                                class="btn btn-outline-dark add-car">
                                 Añadir producto
                                 <i class="fas fa-plus-circle"></i>
                               </button>
                             </div>
+                            <table class="table table-sm table-bordered table-responsive-md table-hover col">
+                              <thead class="text-center">
+                                <th>Nombre Producto</th>
+                                <th>Unidades</th>
+                                <th>Remover</th>
+                              </thead>
+                              <tbody id="productos-compra">
+                              </tbody>
+                            </table>
                             <div class="col-12">
                               <div class="form-group">
                                 <label>Seleccione Proveedor</label>
@@ -433,8 +431,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <div class="container">
             <div class="row">
               <div class="col">
-                <div class="modal fade" id="registro-cliente" tabindex="-1" role="dialog"
-                  aria-labelledby="registro-cliente" aria-hidden="true">
+                <div class="modal fade" id="registro-proveedor" tabindex="-1" role="dialog"
+                  aria-labelledby="registro-proveedor" aria-hidden="true">
                   <div class="modal-dialog">
                     <div class="modal-content">
                       <div class="modal-header">
@@ -531,11 +529,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     <div class="card-header">
                       <div class="row">
                         <div class="col-12 col-md-6">
-                          <h2>Lista general proveedores</h2>
+                          <h2 id="tabla-proveedores">Lista general proveedores</h2>
                         </div>
                         <div class="col-12 col-sm-6 d-flex align-items-center justify-content-md-end">
                           <a class="btn btn-success mr-2 btn-sm" href="#" data-toggle="modal"
-                            data-target="#registro-cliente">Registrar Proveedor</a>
+                            data-target="#registro-proveedor">Registrar Proveedor
+                          </a>
                           <!-- SEARCH FORM -->
                           <form class="form-inline">
                             <div class="input-group input-group-sm">
@@ -554,7 +553,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     </div>
                     <!-- /.card-header -->
                     <div class="card-body">
-                      <table id="example2" class="table table-bordered table-hover table-responsive-md">
+                      <table class="table table-bordered table-hover table-responsive-md">
                         <thead class="text-center">
                           <tr>
                             <th>Nombre</th>
@@ -945,7 +944,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <div class="row">
               <div class="col">
                 <div class="modal fade" id="registro-categoria" tabindex="-1" role="dialog"
-                  aria-labelledby="registro-producto" aria-hidden="true">
+                  aria-labelledby="registro-categoria" aria-hidden="true">
                   <div class="modal-dialog">
                     <div class="modal-content">
                       <div class="modal-header">
@@ -978,171 +977,169 @@ scratch. This page gets rid of all links and provides the needed markup only.
               </div>
             </div>
           </div>
-        </div>
-        <!-- / Modal para registro de nueva categoria -->
-        <!-- tabla categorias -->
-        <div class="content">
-          <div class="container-fluid">
-            <div class="row mb-2">
-              <div class="col">
-                <div class="card">
-                  <div class="card-header">
-                    <div class="row">
-                      <div class="col-12 col-md-6">
-                        <h2 id="tabla-categorias">Categorias productos</h2>
-                      </div>
-                      <div class="col-12 col-sm-6 d-flex align-items-center justify-content-md-end">
-                        <a class="btn btn-success mr-2 btn-sm" href="#" data-toggle="modal"
-                          data-target="#registro-categoria">Nueva categoria</a>
-                        <!-- SEARCH FORM -->
-                        <form class="form-inline">
-                          <div class="input-group input-group-sm">
-                            <input class="form-control form-control-navbar" type="search" placeholder="Buscar"
-                              aria-label="buscar">
-                            <div class="input-group-append">
-                              <button style="background-color: rgb(207, 207, 207);" class="btn btn-navbar"
-                                type="submit">
-                                <i class="fas fa-search"></i>
-                              </button>
+          <!-- / Modal para registro de nueva categoria -->
+          <!-- tabla categorias -->
+          <div class="content">
+            <div class="container-fluid">
+              <div class="row mb-2">
+                <div class="col">
+                  <div class="card">
+                    <div class="card-header">
+                      <div class="row">
+                        <div class="col-12 col-md-6">
+                          <h2 id="tabla-categorias">Categorias productos</h2>
+                        </div>
+                        <div class="col-12 col-sm-6 d-flex align-items-center justify-content-md-end">
+                          <a class="btn btn-success mr-2 btn-sm" href="#" data-toggle="modal"
+                            data-target="#registro-categoria">Nueva categoria</a>
+                          <!-- SEARCH FORM -->
+                          <form class="form-inline">
+                            <div class="input-group input-group-sm">
+                              <input class="form-control form-control-navbar" type="search" placeholder="Buscar"
+                                aria-label="buscar">
+                              <div class="input-group-append">
+                                <button style="background-color: rgb(207, 207, 207);" class="btn btn-navbar"
+                                  type="submit">
+                                  <i class="fas fa-search"></i>
+                                </button>
+                              </div>
                             </div>
-                          </div>
-                        </form>
+                          </form>
+                        </div>
                       </div>
                     </div>
+                    <!-- /.card-header -->
+                    <div class="card-body">
+                      <table class="table table-bordered table-hover">
+                        <thead class="text-center">
+                          <tr>
+                            <th>id categoria</th>
+                            <th>nombre categoria</th>
+                            <th>Ajustes</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>Whiskey</td>
+                            <td>
+                              <form action="" class="d-flex justify-content-around">
+                                <button type="submit" class="btn btn-outline-danger btn-sm">
+                                  <i class="fas fa-user-times"></i>
+                                </button>
+                                <button type="submit" class="btn btn-warning btn-sm">
+                                  <i class="far fa-edit"></i>
+                                </button>
+                              </form>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>1</td>
+                            <td>Whiskey</td>
+                            <td>
+                              <form action="" class="d-flex justify-content-around">
+                                <button type="submit" class="btn btn-outline-danger btn-sm">
+                                  <i class="fas fa-user-times"></i>
+                                </button>
+                                <button type="submit" class="btn btn-warning btn-sm">
+                                  <i class="far fa-edit"></i>
+                                </button>
+                              </form>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>1</td>
+                            <td>Whiskey</td>
+                            <td>
+                              <form action="" class="d-flex justify-content-around">
+                                <button type="submit" class="btn btn-outline-danger btn-sm">
+                                  <i class="fas fa-user-times"></i>
+                                </button>
+                                <button type="submit" class="btn btn-warning btn-sm">
+                                  <i class="far fa-edit"></i>
+                                </button>
+                              </form>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>1</td>
+                            <td>Whiskey</td>
+                            <td>
+                              <form action="" class="d-flex justify-content-around">
+                                <button type="submit" class="btn btn-outline-danger btn-sm">
+                                  <i class="fas fa-user-times"></i>
+                                </button>
+                                <button type="submit" class="btn btn-warning btn-sm">
+                                  <i class="far fa-edit"></i>
+                                </button>
+                              </form>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>1</td>
+                            <td>Whiskey</td>
+                            <td>
+                              <form action="" class="d-flex justify-content-around">
+                                <button type="submit" class="btn btn-outline-danger btn-sm">
+                                  <i class="fas fa-user-times"></i>
+                                </button>
+                                <button type="submit" class="btn btn-warning btn-sm">
+                                  <i class="far fa-edit"></i>
+                                </button>
+                              </form>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>1</td>
+                            <td>Whiskey</td>
+                            <td>
+                              <form action="" class="d-flex justify-content-around">
+                                <button type="submit" class="btn btn-outline-danger btn-sm">
+                                  <i class="fas fa-user-times"></i>
+                                </button>
+                                <button type="submit" class="btn btn-warning btn-sm">
+                                  <i class="far fa-edit"></i>
+                                </button>
+                              </form>
+                            </td>
+                          </tr>
+                      </table>
+                    </div>
+                    <!-- /.card-body -->
                   </div>
-                  <!-- /.card-header -->
-                  <div class="card-body">
-                    <table class="table table-bordered table-hover table-responsive-md">
-                      <thead class="text-center">
-                        <tr>
-                          <th>id categoria</th>
-                          <th>nombre categoria</th>
-                          <th>Ajustes</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>1</td>
-                          <td>Whiskey</td>
-                          <td>
-                            <form action="" class="d-flex justify-content-around">
-                              <button type="submit" class="btn btn-outline-danger btn-sm">
-                                <i class="fas fa-user-times"></i>
-                              </button>
-                              <button type="submit" class="btn btn-warning btn-sm">
-                                <i class="far fa-edit"></i>
-                              </button>
-                            </form>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>1</td>
-                          <td>Whiskey</td>
-                          <td>
-                            <form action="" class="d-flex justify-content-around">
-                              <button type="submit" class="btn btn-outline-danger btn-sm">
-                                <i class="fas fa-user-times"></i>
-                              </button>
-                              <button type="submit" class="btn btn-warning btn-sm">
-                                <i class="far fa-edit"></i>
-                              </button>
-                            </form>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>1</td>
-                          <td>Whiskey</td>
-                          <td>
-                            <form action="" class="d-flex justify-content-around">
-                              <button type="submit" class="btn btn-outline-danger btn-sm">
-                                <i class="fas fa-user-times"></i>
-                              </button>
-                              <button type="submit" class="btn btn-warning btn-sm">
-                                <i class="far fa-edit"></i>
-                              </button>
-                            </form>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>1</td>
-                          <td>Whiskey</td>
-                          <td>
-                            <form action="" class="d-flex justify-content-around">
-                              <button type="submit" class="btn btn-outline-danger btn-sm">
-                                <i class="fas fa-user-times"></i>
-                              </button>
-                              <button type="submit" class="btn btn-warning btn-sm">
-                                <i class="far fa-edit"></i>
-                              </button>
-                            </form>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>1</td>
-                          <td>Whiskey</td>
-                          <td>
-                            <form action="" class="d-flex justify-content-around">
-                              <button type="submit" class="btn btn-outline-danger btn-sm">
-                                <i class="fas fa-user-times"></i>
-                              </button>
-                              <button type="submit" class="btn btn-warning btn-sm">
-                                <i class="far fa-edit"></i>
-                              </button>
-                            </form>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>1</td>
-                          <td>Whiskey</td>
-                          <td>
-                            <form action="" class="d-flex justify-content-around">
-                              <button type="submit" class="btn btn-outline-danger btn-sm">
-                                <i class="fas fa-user-times"></i>
-                              </button>
-                              <button type="submit" class="btn btn-warning btn-sm">
-                                <i class="far fa-edit"></i>
-                              </button>
-                            </form>
-                          </td>
-                        </tr>
-                    </table>
-                  </div>
-                  <!-- /.card-body -->
                 </div>
               </div>
-            </div>
-          </div><!-- /.container-fluid -->
+            </div><!-- /.container-fluid -->
+          </div>
+          <!--/tabla categorias -->
         </div>
-        <!--/tabla categorias -->
       </div>
+      <!-- /.SECCION PRINCIPAL DE TABLAS Y FORMULARIOS -->
     </div>
+    <!-- /.CONTENIDO PRINCIPAL DE LA PAGINA -->
   </div>
-  <!-- /.content-wrapper -->
 
-  <!-- Control Sidebar -->
-  <aside class="control-sidebar control-sidebar-dark text-right" style="height: 5%;">
-    <!-- Control sidebar content goes here -->
+
+  <!-- MENU CIERRE DE SESION -->
+  <aside class="control-sidebar control-sidebar-dark text-right" style="height: 15%;">
     <div class="p-3">
       <i class="far fa-user"></i>
       <a href="../../../index.html">Cerrar Sesion</a>
     </div>
   </aside>
-  <!-- /.control-sidebar -->
-
-  <!-- Main Footer -->
+  <!-- /.MENU CIERRE DE SESION -->
+  <!-- /.WRAPPER -->
+  <!-- FOOTER -->
   <footer class="main-footer">
     <!-- To the right -->
     <div class="float-right d-none d-sm-inline">
       <a target="blank" href="https://www.facebook.com/licoresElgatoEC"><i class="fab fa-facebook"></i></i></a>
     </div>
-    <!-- Default to the left -->
     <strong> SISTEMA INFORMACIÓN LICORES EL GATO</strong>
   </footer>
+  <!-- /.FOOTER -->
   </div>
-  <!-- ./wrapper -->
-
   <!-- REQUIRED SCRIPTS -->
-
   <!-- jQuery -->
   <script src="../plugins/jquery/jquery.min.js"></script>
   <!-- Bootstrap 4 -->
@@ -1151,6 +1148,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <script src="../dist/js/adminlte.min.js"></script>
   <!-- js inventarios -->
   <script src="../js/inventory.js"></script>
+  <script src="../js/reloj.js"></script>
 </body>
 
 </html>
