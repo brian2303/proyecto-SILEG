@@ -40,7 +40,7 @@
           <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
             <span class="dropdown-header">Notificaciones sileg</span>
             <div class="dropdown-divider"></div>
-            <a href="#" class="dropdown-item">
+            <a href="#" data-toggle="modal" data-target="#alerta-stock" class="dropdown-item">
               <i class="fas fa-eye mr-2"></i>3 Productos sin stock minimo
             </a>
             <div class="dropdown-divider"></div>
@@ -187,6 +187,22 @@
                               <input id="unidades" type="number" name="unidades" class="form-control"
                                 placeholder="Unidades">
                             </div>
+                            <div class="col-12 input-group mb-3">
+                              <input id="subtotal" type="number" name="subtotal" class="form-control"
+                                placeholder="Subtotal Producto">
+                            </div>
+                            <div class="col-12">
+                              <div class="form-group">
+                                <label>Seleccione Impuesto</label>
+                                <select id="seleccion-impuesto" class="form-control" name="seleccion-impuesto">
+                                  <option>IVA</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-12 input-group mb-3">
+                              <input id="total-compra-producto" type="number" name="total-compra-producto" class="form-control"
+                                placeholder="total-compra-producto">
+                            </div>
                             <div class="col-6 offset-md-6 input-group mb-3 d-flex justify-content-md-end">
                               <button id="agregar-producto" type="button" name="agregar-producto"
                                 class="btn btn-outline-dark add-car">
@@ -282,7 +298,7 @@
                             <td>18323</td>
                             <td>201323</td>
                             <td>
-                              <button type="submit" class="btn btn-outline-success btn-sm">
+                              <button data-target="#detalle-compra" data-toggle="modal" type="submit" class="btn btn-outline-success btn-sm">
                                 Detalles
                                 <i class="fas fa-search"></i>
                               </button>
@@ -427,6 +443,73 @@
             </div><!-- /.container-fluid -->
           </div>
           <!--/tabla compras -->
+          <!-- Modal que muesta el detalle de compras -->
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="modal fade" id="detalle-compra" tabindex="-1" role="dialog"
+                  aria-labelledby="detalle-compra" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h2 class="modal-tittle">
+                          Detalle compra
+                          <i class="fas fa-cash-register"></i>
+                        </h2>
+                        <button class="close" data-dismiss="modal" aria-label="cerrar">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="content">
+                          <div class="container-fluid">
+                            <div class="row mb-2">
+                              <div class="col">
+                                <table class="table table-bordered table-hover">
+                                  <thead class="text-center">
+                                    <tr class="text-center">
+                                      <th>Producto</th>
+                                      <th>Unidades</th>
+                                      <th>subtotal</th>
+                                      <th>iva</th>
+                                      <th>total</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr class="text-center">
+                                      <td>Budweiser</td>
+                                      <td>2</td>
+                                      <td>70.000</td>
+                                      <td>12.000</td>
+                                      <td>82.000</td>
+                                    </tr>
+                                    <tr class="text-center">
+                                      <td>Budweiser</td>
+                                      <td>2</td>
+                                      <td>70.000</td>
+                                      <td>12.000</td>
+                                      <td>82.000</td>
+                                    </tr>
+                                    <tr class="text-center">
+                                      <td>Budweiser</td>
+                                      <td>2</td>
+                                      <td>70.000</td>
+                                      <td>12.000</td>
+                                      <td>82.000</td>
+                                    </tr>
+                                </table>
+                              </div>
+                            </div>
+                          </div><!-- /.container-fluid -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.Modal que muesta el detalle de compras -->
           <!-- Modal para registro de proveedores -->
           <div class="container">
             <div class="row">
@@ -437,7 +520,7 @@
                     <div class="modal-content">
                       <div class="modal-header">
                         <h2 class="modal-tittle mr-2">Nuevo Proveedor
-                          <span class="fas fa-plus-square"></span>
+                          <i class="fas fa-user-plus"></i>
                         </h2>
                         <button class="close" data-dismiss="modal" aria-label="cerrar">
                           <span aria-hidden="true">&times;</span>
@@ -447,7 +530,7 @@
                         <form action="#" method="post">
                           <div class="row">
                             <div class="col-12 input-group mb-3">
-                              <input type="text" name="nombre" class="form-control" placeholder="Nombre">
+                              <input type="text" name="nombre-proveedor" class="form-control" placeholder="Nombre">
                               <div class="input-group-append">
                                 <div class="input-group-text">
                                   <span class="fas fa-user"></span>
@@ -695,7 +778,7 @@
                     <div class="modal-content">
                       <div class="modal-header">
                         <h2 class="modal-tittle mr-2">Nuevo Producto
-                          <span class="fas fa-plus-square"></span>
+                          <i class="fas fa-beer"></i>
                         </h2>
                         <button class="close" data-dismiss="modal" aria-label="cerrar">
                           <span aria-hidden="true">&times;</span>
@@ -748,7 +831,7 @@
                             <div class="col-12">
                               <div class="form-group">
                                 <label>Seleccione la presentacion</label>
-                                <select class="form-control" name="categoria_producto">
+                                <select class="form-control" name="presentacion">
                                   <option>1/4</option>
                                   <option>Media</option>
                                   <option>Botella</option>
@@ -959,7 +1042,7 @@
                         <form action="#" method="post">
                           <div class="row">
                             <div class="col-12 input-group mb-3">
-                              <input type="text" name="nombre-producto" class="form-control"
+                              <input type="text" name="categoria-producto" class="form-control"
                                 placeholder="Nombre categoria">
                               <div class="input-group-append">
                                 <div class="input-group-text">
@@ -1112,6 +1195,65 @@
             </div><!-- /.container-fluid -->
           </div>
           <!--/tabla categorias -->
+          <!-- Modal de alerta de stock faltante -->
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="modal fade" id="alerta-stock" tabindex="-1" role="dialog"
+                  aria-labelledby="alerta-stock" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h2 class="modal-tittle">
+                          Productos sin stock minimo
+                          <i class="fas fa-exclamation-triangle"></i>
+                        </h2>
+                        <button class="close" data-dismiss="modal" aria-label="cerrar">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="content">
+                          <div class="container-fluid">
+                            <div class="row mb-2">
+                              <div class="col">
+                                <table class="table table-bordered table-hover">
+                                  <thead class="text-center">
+                                    <tr>
+                                      <th>Producto</th>
+                                      <th>Unidades Stock</th>
+                                      <th>fecha ultima compra</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>Whiskey</td>
+                                      <td>2</td>
+                                      <td>12/05/2020</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Bandeja poker</td>
+                                      <td>3</td>
+                                      <td>22/05/2020</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Nectar verde</td>
+                                      <td>7</td>
+                                      <td>12/06/2020</td>
+                                    </tr>
+                                </table>
+                              </div>
+                            </div>
+                          </div><!-- /.container-fluid -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.Modal de alerta de stock faltante -->
         </div>
       </div>
       <!-- /.SECCION PRINCIPAL DE TABLAS Y FORMULARIOS -->
