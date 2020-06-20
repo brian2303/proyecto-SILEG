@@ -265,7 +265,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <div class="row">
             <div class="col-12">
               <div class="card-body">
-                <table id="example2" class="table table-bordered table-hover table-responsive-md">
+                <table class="table table-bordered table-hover table-responsive-md">
                   <thead class="text-center">
                     <tr>
                       <th>Cliente</th>
@@ -285,7 +285,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                       <td>los productos son buenos pero hay que agregar mas</td>
                       <td>
                         <form action="" class="d-flex justify-content-around">
-                          <button type="submit" data-toggle="modal" data-target="#responder-pqrs" class="btn btn-warning btn-sm">
+                          <button type="button" data-target="#responder" data-toggle="modal" class="btn btn-warning btn-sm">
                             Responder
                             <i class="fas fa-reply-all"></i>
                           </button>
@@ -300,7 +300,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                       <td>los productos son buenos pero hay que agregar mas</td>
                       <td>
                         <form action="" class="d-flex justify-content-around">
-                          <button type="submit" data-toggle="modal" data-target="#responder-pqrs" class="btn btn-warning btn-sm">
+                          <button type="button" data-toggle="modal" data-target="#responder" class="btn btn-warning btn-sm">
                             Responder
                             <i class="fas fa-reply-all"></i>
                           </button>
@@ -315,7 +315,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                       <td>los productos son buenos pero hay que agregar mas</td>
                       <td>
                         <form action="" class="d-flex justify-content-around">
-                          <button type="submit" data-toggle="modal" data-target="#responder-pqrs" class="btn btn-warning btn-sm">
+                          <button type="button" data-toggle="modal" data-target="#responder" class="btn btn-warning btn-sm">
                             Responder
                             <i class="fas fa-reply-all"></i>
                           </button>
@@ -330,23 +330,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                       <td>los productos son buenos pero hay que agregar mas</td>
                       <td>
                         <form action="" class="d-flex justify-content-around">
-                          <button type="submit" data-toggle="modal" data-target="#responder-pqrs" class="btn btn-warning btn-sm">
-                            Responder
-                            <i class="fas fa-reply-all"></i>
-                          </button>
-                        </form>
-                      </td>
-                    </tr>
-        
-                    <tr>
-                      <td>Andres Perez</td>
-                      <td>Peticion</td>
-                      <td>añadir nuevos productos</td>
-                      <td>17/05/2020</td>
-                      <td>los productos son buenos pero hay que agregar mas</td>
-                      <td>
-                        <form action="" class="d-flex justify-content-around">
-                          <button type="submit" data-toggle="modal" data-target="#responder-pqrs" class="btn btn-warning btn-sm">
+                          <button type="button" data-toggle="modal" data-target="#responder" class="btn btn-warning btn-sm">
                             Responder
                             <i class="fas fa-reply-all"></i>
                           </button>
@@ -362,7 +346,23 @@ scratch. This page gets rid of all links and provides the needed markup only.
                       <td>los productos son buenos pero hay que agregar mas</td>
                       <td>
                         <form action="" class="d-flex justify-content-around">
-                          <button type="submit" data-toggle="modal" data-target="#responder-pqrs" class="btn btn-warning btn-sm">
+                          <button type="button" data-toggle="modal" data-target="#responder" class="btn btn-warning btn-sm">
+                            Responder
+                            <i class="fas fa-reply-all"></i>
+                          </button>
+                        </form>
+                      </td>
+                    </tr>
+        
+                    <tr>
+                      <td>Andres Perez</td>
+                      <td>Peticion</td>
+                      <td>añadir nuevos productos</td>
+                      <td>17/05/2020</td>
+                      <td>los productos son buenos pero hay que agregar mas</td>
+                      <td>
+                        <form action="" class="d-flex justify-content-around">
+                          <button type="button" data-toggle="modal" data-target="#responder" class="btn btn-warning btn-sm">
                             Responder
                             <i class="fas fa-reply-all"></i>
                           </button>
@@ -374,107 +374,25 @@ scratch. This page gets rid of all links and provides the needed markup only.
             </div>
           </div>
           <!-- tabla de pqrs -->
-
           <!-- modal respuesta de pqrs -->
           <div class="container">
             <div class="row">
               <div class="col">
-                <div class="modal fade" id="responder-pqrs" tabindex="-1" role="dialog" aria-labelledby="responder-pqrs"
-                  aria-hidden="true">
+                <div class="modal fade" id="responder" tabindex="-1" role="dialog"
+                  aria-labelledby="responder" aria-hidden="true">
                   <div class="modal-dialog">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h2 class="modal-tittle">Formulario registro</h2>
+                        <h2 class="modal-tittle">
+                          Detalle compra
+                          <i class="fas fa-cash-register"></i>
+                        </h2>
                         <button class="close" data-dismiss="modal" aria-label="cerrar">
                           <span aria-hidden="true">&times;</span>
                         </button>
                       </div>
                       <div class="modal-body">
-                        <form action="#" method="post">
-                          <div class="row">
-                            <div class="col-12 col-md-6 input-group mb-3">
-                              <input type="text" name="nombres" class="form-control" placeholder="Nombres">
-                              <div class="input-group-append">
-                                <div class="input-group-text">
-                                  <span class="fas fa-user"></span>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-12 col-md-6 input-group mb-3">
-                              <input type="text" name="apellidos" class="form-control" placeholder="Apellidos">
-                              <div class="input-group-append">
-                                <div class="input-group-text">
-                                  <span class="fas fa-user"></span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="col-12 col-md-6 input-group mb-3">
-                              <input type="text" name="celular" class="form-control" placeholder="celular">
-                              <div class="input-group-append">
-                                <div class="input-group-text">
-                                  <span class="fas fa-phone-square-alt"></span>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-12 col-md-6 input-group mb-3">
-                              <input type="text" name="telopcional" class="form-control" placeholder="telefono opcional">
-                              <div class="input-group-append">
-                                <div class="input-group-text">
-                                  <span class="fas fa-phone-square-alt"></span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="input-group mb-3">
-                            <input type="email" name="email" class="form-control" placeholder="Email">
-                            <div class="input-group-append">
-                              <div class="input-group-text">
-                                <span class="fas fa-envelope"></span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="input-group mb-3">
-                            <input type="text" name="direccion" class="form-control" placeholder="Direccion">
-                            <div class="input-group-append">
-                              <div class="input-group-text">
-                                <span class="fas fa-street-view"></span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="input-group mb-3">
-                            <input type="text" name="ciudad" class="form-control" placeholder="Ciudad">
-                            <div class="input-group-append">
-                              <div class="input-group-text">
-                                <span class="fas fa-street-view"></span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="input-group mb-3">
-                            <input type="password" name="contrasena" class="form-control" placeholder="Contraseña">
-                            <div class="input-group-append">
-                              <div class="input-group-text">
-                                <span class="fas fa-lock"></span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="input-group mb-3">
-                            <input type="password" class="form-control" placeholder="Confirmar contraseña">
-                            <div class="input-group-append">
-                              <div class="input-group-text">
-                                <span class="fas fa-lock"></span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="row">
-                            <!-- /.col -->
-                            <div class="col-12">
-                              <button type="submit" class="btn btn-primary btn-block">Registrarme</button>
-                            </div>
-                            <!-- /.col -->
-                          </div>
-                        </form>
+                        
                       </div>
                     </div>
                   </div>
@@ -484,6 +402,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           </div>
           <!-- modal respuesta de pqrs -->
         </div>
+
       </div>
     </div>
   </div><!-- /.container-fluid -->
