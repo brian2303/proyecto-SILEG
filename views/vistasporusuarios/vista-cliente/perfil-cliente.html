@@ -133,8 +133,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <div class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
-          <div class="col-sm-6">
-            <h1 class="m-0 text-dark">Tu perfil</h1>
+          <div class="col-sm-12 offset-md-5">
+            <h1 class="m-0 text-dark">TU PERFIL</h1>
           </div><!-- /.col -->
         </div><!-- /.row -->
       </div><!-- /.container-fluid -->
@@ -148,7 +148,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <section class="content">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-6 offset-md-3">
   
               <!-- Profile Image -->
               <div class="card card-primary card-outline">
@@ -162,20 +162,163 @@ scratch. This page gets rid of all links and provides the needed markup only.
                   <h3 class="profile-username text-center">Andres Perez</h3>
   
                   <p class="text-muted text-center">CLIENTE</p>
-  
-                  <ul class="list-group list-group-unbordered mb-3">
-                    <li class="list-group-item">
-                      <b>Puntos</b> <a class="float-right">155</a>
-                    </li>
-                    <li class="list-group-item">
-                      <b>Compras</b> <a class="float-right">543</a>
-                    </li>
-                    <li class="list-group-item">
-                      <b>Productos</b> <a class="float-right">20</a>
-                    </li>
-                  </ul>
-  
-                  <a href="#" class="btn btn-primary btn-block"><b>cambiar datos</b></a>
+                    <!--columnas perfil -->
+                  <div class="list-group list-group-unbordered mb-3">
+                    <div class="row p-1">
+                      <div class="col p-1 pl-2">
+                        <strong>Nombre:</strong>
+                        <span>Andres</span>
+                      </div>
+                      <div class="col p-1">
+                       <strong>Apellido:</strong>
+                       <span>Perez</span>
+                      </div>
+                    </div>
+                    <div class="row p-1">
+                      <div class="col p-1 pl-2">
+                        <strong>Direccion:</strong>
+                        <span>kra 75b #65 c 33</span>
+                      </div>
+                      <div class="col p-1">
+                       <strong>fecha nacimiento:</strong>
+                       <span>15/05/1991</span>
+                      </div>
+                    </div>
+                    <div class="row p-1">
+                      <div class="col p-1 pl-2">
+                        <strong>email:</strong>
+                        <span>pepeMojica@hotmail.com</span>
+                      </div>
+                      <div class="col p-1">
+                       <strong>puntos:</strong>
+                       <span>9669</span>
+                      </div>
+                    </div>
+                    <div class="row p-1">
+                      <div class="col p-1 pl-2">
+                        <strong>Telefono::</strong>
+                        <span>311377873</span>
+                      </div>
+                      <div class="col p-1">
+                       <strong>Telefono opcional:</strong>
+                       <span>3103936789</span>
+                      </div>
+                    </div>
+                  </div>
+                 <!--columnas perfil -->
+
+                 <!--modal cambio datos cliente -->
+                 <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <div class="modal fade" id="cambiar-datos" tabindex="-1" role="dialog" aria-labelledby="cambiar-datos"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h2 class="modal-tittle">Modificar datos personales</h2>
+                              <button class="close" data-dismiss="modal" aria-label="cerrar">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <form action="#" method="post">
+                                <div class="row">
+                                  <div class="col-12 col-md-6 input-group mb-3">
+                                    <input type="text" name="nombres" class="form-control" placeholder="Nombres">
+                                    <div class="input-group-append">
+                                      <div class="input-group-text">
+                                        <span class="fas fa-user"></span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-12 col-md-6 input-group mb-3">
+                                    <input type="text" name="apellidos" class="form-control" placeholder="Apellidos">
+                                    <div class="input-group-append">
+                                      <div class="input-group-text">
+                                        <span class="fas fa-user"></span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-12 col-md-6 input-group mb-3">
+                                    <input type="text" name="celular" class="form-control" placeholder="celular">
+                                    <div class="input-group-append">
+                                      <div class="input-group-text">
+                                        <span class="fas fa-phone-square-alt"></span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-12 col-md-6 input-group mb-3">
+                                    <input type="text" name="telopcional" class="form-control" placeholder="telefono opcional">
+                                    <div class="input-group-append">
+                                      <div class="input-group-text">
+                                        <span class="fas fa-phone-square-alt"></span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="input-group mb-3">
+                                  <input type="email" name="email" class="form-control" placeholder="Email">
+                                  <div class="input-group-append">
+                                    <div class="input-group-text">
+                                      <span class="fas fa-envelope"></span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="input-group mb-3">
+                                  <input type="text" name="direccion" class="form-control" placeholder="Direccion">
+                                  <div class="input-group-append">
+                                    <div class="input-group-text">
+                                      <span class="fas fa-street-view"></span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="input-group mb-3">
+                                  <input type="text" name="ciudad" class="form-control" placeholder="Ciudad">
+                                  <div class="input-group-append">
+                                    <div class="input-group-text">
+                                      <span class="fas fa-street-view"></span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="input-group mb-3">
+                                  <input type="password" name="contrasena" class="form-control" placeholder="Contraseña">
+                                  <div class="input-group-append">
+                                    <div class="input-group-text">
+                                      <span class="fas fa-lock"></span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="input-group mb-3">
+                                  <input type="password" class="form-control" placeholder="Confirmar contraseña">
+                                  <div class="input-group-append">
+                                    <div class="input-group-text">
+                                      <span class="fas fa-lock"></span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <!-- /.col -->
+                                  <div class="col-12">
+                                    <button type="submit" class="btn btn-primary btn-block">guardar cambios</button>
+                                  </div>
+                                  <!-- /.col -->
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--modal cambio datos cliente -->
+
+                 <!--boton formulario -->
+                  <a href="#" data-toggle="modal" data-target="#cambiar-datos" class="btn btn-primary btn-block"><b>cambiar datos</b></a>
+                  <!--boton formulario -->
                 </div>
                 <!-- /.card-body -->
               </div>
