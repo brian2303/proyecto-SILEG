@@ -42,6 +42,64 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto">
+      <!-- navbar carrito -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="badge badge-warning navbar-badge">5</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <span class="dropdown-header">Productos seleccionados</span>
+          <div class="dropdown-divider"></div>
+              <form class="dropdown-item" name="miform" id="miform" method="get">
+                <div class="row mb-2">
+                  <div class="col-3">
+                    <img src="../img/cerveza.jpg" width="50px" height="50px">
+                  </div>
+                  <div class="col-6">
+                    <p>cerveza poker</p>
+                    <p class="text-center">2400</p>
+                  </div>
+                  <div class="col-3">
+                    <input type="number" name="minumber" id="minumber" min="0" max="10" step="2" style="width: 60px;">
+                  </div>
+                </div>
+                <div class="row mb-2">
+                  <div class="col-3">
+                    <img src="../img/cervezaandina.jpg" width="50px" height="50px">
+                  </div>
+                  <div class="col-6">
+                    <p>Cerveza Andina</p>
+                    <p class="text-center">2500</p>
+                  </div>
+                  <div class="col-3">
+                    <input type="number" name="minumber" id="minumber" min="0" max="10" step="2" style="width: 60px;">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-3">
+                    <img src="../img/cigarrillos.jpg" width="50px" height="50px">
+                  </div>
+                  <div class="col-6">
+                    <p>Medio Mustang</p>
+                    <p class="text-center">3500</p>
+                  </div>
+                  <div class="col-3">
+                    <input type="number" name="minumber" id="minumber" min="0" max="10" step="2" style="width: 60px;">
+                  </div>
+                </div>
+               <div class="row mt-3">
+                 <div class="col">
+                  <input type="submit" value="Ir al carrito" class="btn btn-success btn-block">
+                 </div>
+               </div>
+               
+              </form>
+             
+          
+      </li>
+      <!-- navbar carrito -->
+      
       <!-- Notifications Dropdown Menu -->
       <li class="nav-item dropdown">
         <a class="nav-link" data-toggle="dropdown" href="#">

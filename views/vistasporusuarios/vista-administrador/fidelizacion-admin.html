@@ -353,7 +353,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         </form>
                       </td>
                     </tr>
-        
                     <tr>
                       <td>Andres Perez</td>
                       <td>Peticion</td>
@@ -374,6 +373,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             </div>
           </div>
           <!-- tabla de pqrs -->
+          
           <!-- modal respuesta de pqrs -->
           <div class="container">
             <div class="row">
@@ -384,15 +384,57 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     <div class="modal-content">
                       <div class="modal-header">
                         <h2 class="modal-tittle">
-                          Detalle compra
-                          <i class="fas fa-cash-register"></i>
+                          Responder pqrs
+                          <i class="fas fa-reply-all"></i>
                         </h2>
                         <button class="close" data-dismiss="modal" aria-label="cerrar">
                           <span aria-hidden="true">&times;</span>
                         </button>
                       </div>
                       <div class="modal-body">
-                        
+                        <form action="#" method="post">
+                          <div class="row">
+                            <div class="col-12 col-md-6 input-group mb-3">
+                             <p>Andres Perez</p>
+                            </div>
+                            <div class="col-12 col-md-6 input-group mb-3">
+                             <p>queja</p>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-12 col-md-12 input-group mb-3">
+                             <p class="border">los productos son buenos pero hay que agregar mas al stock, para poder escoger entre mas productos
+                               y que no se vuelvan productos comunes los que compramos como clientes
+                             </p>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-12 col-md-6 input-group mb-3">
+                              <input type="text" name="asunto" class="form-control" placeholder="Asunto">
+                              <div class="input-group-append">
+                                <div class="input-group-text">
+                                  <span class="fab fa-amilia"></span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-12 col-md-6 input-group mb-3">
+                              <input type="date" name="fecha" class="form-control" placeholder="Fecha">
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-12 col-md-12 input-group mb-3">
+                              <textarea name="textarea" id="textarea" cols="145" rows="5" placeholder="Descripción"></textarea>
+                            </div>
+                          </div>
+                           
+                          <div class="row">
+                            <!-- /.col -->
+                            <div class="col-12">
+                              <button type="submit" class="btn btn-primary btn-block">Responder</button>
+                            </div>
+                            <!-- /.col -->
+                          </div>
+                        </form>
                       </div>
                     </div>
                   </div>
