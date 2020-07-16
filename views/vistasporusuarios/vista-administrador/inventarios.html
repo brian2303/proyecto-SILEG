@@ -169,12 +169,12 @@
                         <form action="#" method="post">
                           <div class="row" id="formulario-compra">
                             <div class="col-12 input-group mb-3">
-                              <input type="date" name="fecha-compra" class="form-control" placeholder="Fecha compra">
+                              <input type="date" name="fecha-compra" class="form-control" placeholder="Fecha compra" required>
                             </div>
                             <div class="col-12">
                               <div class="form-group">
                                 <label>Seleccione producto</label>
-                                <select id="seleccion-producto" class="form-control" name="producto-compra">
+                                <select id="seleccion-producto" class="form-control" name="producto-compra" required>
                                   <option>poker</option>
                                   <option>Aguardiente</option>
                                   <option>Whiskey</option>
@@ -185,23 +185,23 @@
                             </div>
                             <div class="col-12 input-group mb-3">
                               <input id="unidades" type="number" name="unidades" class="form-control"
-                                placeholder="Unidades">
+                                placeholder="Unidades" required>
                             </div>
                             <div class="col-12 input-group mb-3">
                               <input id="subtotal" type="number" name="subtotal" class="form-control"
-                                placeholder="Subtotal Producto">
+                                placeholder="Subtotal Producto" required>
                             </div>
                             <div class="col-12">
                               <div class="form-group">
                                 <label>Seleccione Impuesto</label>
-                                <select id="seleccion-impuesto" class="form-control" name="seleccion-impuesto">
+                                <select id="seleccion-impuesto" class="form-control" name="seleccion-impuesto" required>
                                   <option>IVA</option>
                                 </select>
                               </div>
                             </div>
                             <div class="col-12 input-group mb-3">
                               <input id="total-compra-producto" type="number" name="total-compra-producto" class="form-control"
-                                placeholder="total-compra-producto">
+                                placeholder="total-compra-producto" required>
                             </div>
                             <div class="col-6 offset-md-6 input-group mb-3 d-flex justify-content-md-end">
                               <button id="agregar-producto" type="button" name="agregar-producto"
@@ -222,7 +222,7 @@
                             <div class="col-12">
                               <div class="form-group">
                                 <label>Seleccione Proveedor</label>
-                                <select class="form-control" name="proveedor">
+                                <select class="form-control" name="proveedor" required>
                                   <option>Distribuidora licores</option>
                                   <option>Licores cundinamarca</option>
                                   <option>Proveedor 3</option>
