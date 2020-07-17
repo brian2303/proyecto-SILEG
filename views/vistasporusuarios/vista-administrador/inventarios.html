@@ -169,12 +169,12 @@
                         <form action="#" method="post">
                           <div class="row" id="formulario-compra">
                             <div class="col-12 input-group mb-3">
-                              <input type="date" name="fecha-compra" class="form-control" placeholder="Fecha compra">
+                              <input type="date" name="fecha-compra" class="form-control" placeholder="Fecha compra" required>
                             </div>
                             <div class="col-12">
                               <div class="form-group">
                                 <label>Seleccione producto</label>
-                                <select id="seleccion-producto" class="form-control" name="producto-compra">
+                                <select id="seleccion-producto" class="form-control" name="producto-compra" required>
                                   <option>poker</option>
                                   <option>Aguardiente</option>
                                   <option>Whiskey</option>
@@ -185,23 +185,23 @@
                             </div>
                             <div class="col-12 input-group mb-3">
                               <input id="unidades" type="number" name="unidades" class="form-control"
-                                placeholder="Unidades">
+                                placeholder="Unidades" required>
                             </div>
                             <div class="col-12 input-group mb-3">
                               <input id="subtotal" type="number" name="subtotal" class="form-control"
-                                placeholder="Subtotal Producto">
+                                placeholder="Subtotal Producto" required>
                             </div>
                             <div class="col-12">
                               <div class="form-group">
                                 <label>Seleccione Impuesto</label>
-                                <select id="seleccion-impuesto" class="form-control" name="seleccion-impuesto">
+                                <select id="seleccion-impuesto" class="form-control" name="seleccion-impuesto" required>
                                   <option>IVA</option>
                                 </select>
                               </div>
                             </div>
                             <div class="col-12 input-group mb-3">
                               <input id="total-compra-producto" type="number" name="total-compra-producto" class="form-control"
-                                placeholder="total-compra-producto">
+                                placeholder="total-compra-producto" required>
                             </div>
                             <div class="col-6 offset-md-6 input-group mb-3 d-flex justify-content-md-end">
                               <button id="agregar-producto" type="button" name="agregar-producto"
@@ -222,7 +222,7 @@
                             <div class="col-12">
                               <div class="form-group">
                                 <label>Seleccione Proveedor</label>
-                                <select class="form-control" name="proveedor">
+                                <select class="form-control" name="proveedor" required>
                                   <option>Distribuidora licores</option>
                                   <option>Licores cundinamarca</option>
                                   <option>Proveedor 3</option>
@@ -304,14 +304,14 @@
                               </button>
                             </td>
                             <td>
-                              <form action="" class="d-flex justify-content-around">
-                                <button type="submit" class="btn btn-outline-danger btn-sm">
+                              <div class="d-flex justify-content-around">
+                                <button id="btn-purchase-delete"  class="btn btn-outline-danger btn-sm">
                                   <i class="fas fa-user-times"></i>
                                 </button>
-                                <button type="submit" class="btn btn-warning btn-sm">
+                                <button id="btn-purchase-modify" class="btn btn-warning btn-sm">
                                   <i class="far fa-edit"></i>
                                 </button>
-                              </form>
+                              </div>
                             </td>
                           </tr>
                           <tr>
@@ -400,14 +400,14 @@
                               </button>
                             </td>
                             <td>
-                              <form action="" class="d-flex justify-content-around">
+                              <div action="" class="d-flex justify-content-around">
                                 <button type="submit" class="btn btn-outline-danger btn-sm">
                                   <i class="fas fa-user-times"></i>
                                 </button>
-                                <button type="submit" class="btn btn-warning btn-sm">
+                                <a type="submit" class="btn btn-warning btn-sm">
                                   <i class="far fa-edit"></i>
-                                </button>
-                              </form>
+                                </a>
+                              </div>
                             </td>
                           </tr>
                           <tr>
@@ -657,14 +657,14 @@
                             <td>2343232</td>
                             <td>6433211</td>
                             <td>
-                              <form action="" class="d-flex justify-content-around">
-                                <button type="submit" class="btn btn-outline-danger btn-sm">
+                              <div class="d-flex justify-content-around">
+                                <button id="btn-purchase-supplier"  class="btn btn-outline-danger btn-sm">
                                   <i class="fas fa-user-times"></i>
                                 </button>
-                                <button type="submit" class="btn btn-warning btn-sm">
+                                <button id="btn-purchase-modify" class="btn btn-warning btn-sm">
                                   <i class="far fa-edit"></i>
                                 </button>
-                              </form>
+                              </div>
                             </td>
                           </tr>
                           <tr>
@@ -913,14 +913,14 @@
                             <td>4</td>
                             <td>Botella</td>
                             <td>
-                              <form action="" class="d-flex justify-content-around">
-                                <button type="submit" class="btn btn-outline-danger btn-sm">
+                              <div class="d-flex justify-content-around">
+                                <button id="btn-product-delete"  class="btn btn-outline-danger btn-sm">
                                   <i class="fas fa-user-times"></i>
                                 </button>
-                                <button type="submit" class="btn btn-warning btn-sm">
+                                <button id="btn-product-modify" class="btn btn-warning btn-sm">
                                   <i class="far fa-edit"></i>
                                 </button>
-                              </form>
+                              </div>
                             </td>
                           </tr>
                           <tr>
@@ -1106,14 +1106,14 @@
                             <td>1</td>
                             <td>Whiskey</td>
                             <td>
-                              <form action="" class="d-flex justify-content-around">
-                                <button type="submit" class="btn btn-outline-danger btn-sm">
+                              <div class="d-flex justify-content-around">
+                                <button id="btn-category-delete"  class="btn btn-outline-danger btn-sm">
                                   <i class="fas fa-user-times"></i>
                                 </button>
-                                <button type="submit" class="btn btn-warning btn-sm">
+                                <button id="btn-category-modify" class="btn btn-warning btn-sm">
                                   <i class="far fa-edit"></i>
                                 </button>
-                              </form>
+                              </div>
                             </td>
                           </tr>
                           <tr>
@@ -1290,7 +1290,7 @@
   <script src="../dist/js/adminlte.min.js"></script>
   <!-- js inventarios -->
   <script src="../js/inventory.js"></script>
-  <script src="../js/reloj.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
 
 </html>

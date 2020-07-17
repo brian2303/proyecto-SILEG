@@ -32,10 +32,10 @@
           <div class="card">
             <div class="card-body register-card-body">
               <p class="login-box-msg">Registrarte ahora</p>
-              <form action="#" method="post">
+              <form id="form-registro-cliente" action="#" method="post">
                 <div class="row">
                   <div class="col-12 col-md-6 input-group mb-3">
-                    <input id="nombres" type="text" name="nombres" class="form-control" placeholder="Nombres" required>
+                    <input id="nombres-cliente" type="text" name="nombres" class="form-control" placeholder="Nombres">
                     <div class="input-group-append">
                       <div class="input-group-text">
                         <span class="fas fa-user"></span>
@@ -43,7 +43,7 @@
                     </div>
                   </div>
                   <div class="col-12 col-md-6 input-group mb-3">
-                    <input id="apellidos" type="text" name="apellidos" class="form-control" placeholder="Apellidos" required>
+                    <input id="apellidos-cliente" type="text" name="apellidos" class="form-control" placeholder="Apellidos">
                     <div class="input-group-append">
                       <div class="input-group-text">
                         <span class="fas fa-user"></span>
@@ -53,7 +53,7 @@
                 </div>
                 <div class="row">
                   <div class="col-12 col-md-6 input-group mb-3">
-                    <input id="celular" type="text" name="celular" class="form-control" placeholder="celular" required>
+                    <input id="celular-cliente" type="text" name="celular" class="form-control" placeholder="celular">
                     <div class="input-group-append">
                       <div class="input-group-text">
                         <span class="fas fa-phone-square-alt"></span>
@@ -61,7 +61,7 @@
                     </div>
                   </div>
                   <div class="col-12 col-md-6 input-group mb-3">
-                    <input id="telefono" type="text" name="telopcional" class="form-control" placeholder="telefono opcional" required>
+                    <input id="telefono-cliente" type="text" name="telopcional" class="form-control" placeholder="telefono opcional">
                     <div class="input-group-append">
                       <div class="input-group-text">
                         <span class="fas fa-phone-square-alt"></span>
@@ -70,7 +70,7 @@
                   </div>
                 </div>
                 <div class="input-group mb-3">
-                  <input id="email" type="email" name="email" class="form-control" placeholder="Email" required>
+                  <input id="email-cliente" type="email" name="email" class="form-control" placeholder="Email">
                   <div class="input-group-append">
                     <div class="input-group-text">
                       <span class="fas fa-envelope"></span>
@@ -78,7 +78,7 @@
                   </div>
                 </div>
                 <div class="input-group mb-3">
-                  <input id="direccion" type="text" name="direccion" class="form-control" placeholder="Direccion" required>
+                  <input id="direccion-cliente" type="text" name="direccion" class="form-control" placeholder="Direccion">
                   <div class="input-group-append">
                     <div class="input-group-text">
                       <span class="fas fa-street-view"></span>
@@ -86,7 +86,7 @@
                   </div>
                 </div>
                 <div class="input-group mb-3">
-                  <input id="ciudad" type="text" name="ciudad" class="form-control" placeholder="Ciudad" required>
+                  <input id="ciudad-cliente" type="text" name="ciudad" class="form-control" placeholder="Ciudad">
                   <div class="input-group-append">
                     <div class="input-group-text">
                       <span class="fas fa-street-view"></span>
@@ -94,7 +94,7 @@
                   </div>
                 </div>
                 <div class="input-group mb-3">
-                  <input id="contraseña" type="password" name="contrasena" class="form-control" placeholder="Contraseña" required>
+                  <input id="contraseña-cliente" type="password" name="contrasena" class="form-control" placeholder="Contraseña">
                   <div class="input-group-append">
                     <div class="input-group-text">
                       <span class="fas fa-lock"></span>
@@ -102,7 +102,7 @@
                   </div>
                 </div>
                 <div class="input-group mb-3">
-                  <input id="repetir-contraseña" type="password" class="form-control" placeholder="Confirmar contraseña" required>
+                  <input id="repetir-contraseña-cliente" type="password" class="form-control" placeholder="Confirmar contraseña">
                   <div class="input-group-append">
                     <div class="input-group-text">
                       <span class="fas fa-lock"></span>
@@ -112,7 +112,7 @@
                 <div class="row">
                   <div class="col-12">
                     <div class="icheck-primary">
-                      <input type="checkbox" id="terminos" name="terminos" value="deacuerdo" required>
+                      <input type="checkbox" id="terminos" name="terminos" value="deacuerdo">
                       <label for="terminos">
                       Estoy de acuerdo con los <a href="#">terminos</a>
                       </label>
@@ -120,7 +120,7 @@
                   </div>
                   <div class="col-12">
                     <div class="icheck-primary">
-                      <input type="checkbox" id="mayoriaedad" name="mayoriaedad" value="mayoriaedad" required>
+                      <input type="checkbox" id="mayoriaedad" name="mayoriaedad" value="mayoriaedad">
                       <label for="mayoriaedad">
                       Confirmo ser mayor de edad
                       </label>
@@ -150,8 +150,7 @@
 <script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- AdminLTE App -->
 <script src="../dist/js/adminlte.min.js"></script>
-<script>
-</script>
+<script src="../js/validation.js"></script>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
 </html>

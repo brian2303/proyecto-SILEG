@@ -51,14 +51,37 @@ carrito.addEventListener('click',(e)=>{
     carro.eliminarProducto(e);
 })
 
-
-
-
-
-
-
-
-
+//validacion de eliminacion de campos de las tablas de compras,proveedores,productos y categoria
+const btnPurchaseDelete = document.getElementById('btn-purchase-delete')
+const btnDeleteSupplier = document.getElementById('btn-purchase-supplier')
+const btnDeleteProduct  = document.getElementById('btn-product-delete')
+const btnCategoryDelete = document.getElementById('btn-category-delete')
+//funcion para generar alertas de eliminación
+const generateAlerts = (btn,nameRegister) =>{
+    btn.addEventListener('click',()=>{
+        swal({
+            title: "Estas seguro?",
+            text: `Una vez eliminado no podras recuperar ${nameRegister}!`,
+            icon: "warning",
+            buttons: ["Cancelar", "Eliminar!"],
+            dangerMode: true,
+        })
+        .then((willDelete) => {
+        if (willDelete) {
+            swal(`Tu ${nameRegister} se ha eliminado`, {
+            icon: "success",
+            });
+        } else {
+            swal(`Tu ${nameRegister} aún esta a salvo!`);
+        }
+        });
+    })
+}
+//Llamar funcion para eliminación.
+generateAlerts(btnPurchaseDelete,'compra')
+generateAlerts(btnDeleteSupplier,'proveedor')
+generateAlerts(btnDeleteProduct,'producto')
+generateAlerts(btnCategoryDelete,'categoria')
 
 
 
