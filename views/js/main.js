@@ -49,13 +49,21 @@ const userAdmin = 'pepeMojica@hotmail.com';
 const passAdmin = 'pepe123';
 const userCustomer = 'briolarte@gmail.com';
 const passCustomer = 'bri123';
+const userSeller = 'juan212@gmail.com';
+const passSeller = 'juan123'
 function redireccionar() {
     if(campoEmail.value === userAdmin && campoPassword.value === passAdmin){
         window.open('./views/vistasporusuarios/vista-administrador/reportes.html')
     }else if(campoEmail.value === userCustomer && campoPassword.value === passCustomer){
         window.open('./views/vistasporusuarios/vista-cliente/pedidos-cliente.html')
-    }   
+    }else if (campoEmail.value === userSeller && campoPassword.value === passSeller){
+        window.open('./views/vistasporusuarios/vista-vendedor/registrar-venta.html')
+    }
 }
+
+
+
+
 
 
 
