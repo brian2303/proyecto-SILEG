@@ -173,7 +173,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                       <!--columnas formulario -->
                       <div class="col">
                         <div class="input-group mb-3">
-                          <input type="text" class="form-control" placeholder="nombre">
+                          <input type="text" class="form-control" required placeholder="nombre" maxlength="20">
                           <div class="input-group-append">
                             <div class="input-group-text">
                               <span class="fas fa-user"></span>
@@ -183,7 +183,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                       </div>
                       <div class="col">
                         <div class="input-group mb-3">
-                          <input type="text" class="form-control" placeholder="slogan">
+                          <input type="text" class="form-control" required placeholder="slogan" maxlength="70">
                           <div class="input-group-append">
                             <div class="input-group-text">
                               <i class="fas fa-comment"></i>
@@ -195,7 +195,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     <div class="row">
                       <div class="col">
                         <div class="input-group mb-3">
-                          <input type="number" class="form-control" placeholder="puntos">
+                          <input type="number" class="form-control" required placeholder="puntos" min="1">
                           <div class="input-group-append">
                             <div class="input-group-text">
                               <i class="fas fa-poll"></i>
@@ -205,7 +205,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                       </div>
                       <div class="col">
                         <div class="input-group mb-3">
-                          <input type="file" class="form-control" placeholder="archivo">
+                          <input type="file" class="form-control" required placeholder="archivo">
                           <div class="input-group-append">
                             <div class="input-group-text">
                               <span class="fas fa-images"></span>
@@ -221,7 +221,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                       <div class="col">
                         <p>fecha inicio</p>
                         <div class="input-group mb-3">
-                          <input type="date" class="form-control" placeholder="fecha inicio">
+                          <input type="date" class="form-control" required placeholder="fecha inicio">
                           <div class="input-group-append">
                             <div class="input-group-text">
                               <i class="fas fa-calendar-alt"></i>
@@ -234,7 +234,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                       <div class="col">
                         <p>fecha finalizacion</p>
                         <div class="input-group mb-3">
-                          <input type="date" class="form-control" placeholder="fecha finalizacion">
+                          <input type="date" class="form-control" required placeholder="fecha finalizacion">
                           <div class="input-group-append">
                             <div class="input-group-text">
                               <i class="fas fa-calendar-alt"></i>
@@ -247,7 +247,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
                     <!-- inicio boton -->
                     <div class="col-12">
-                      <button type="submit" class="btn btn-success btn-block">Crear nueva campaña</button>
+                      <button type="submit" class="btn btn-success btn-block" onclick="alerta()">Crear nueva campaña</button>
                     </div>
                     <!-- fin  -->
                   </form>
