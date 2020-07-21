@@ -135,18 +135,22 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <div class="content-header">
         <div class="container-fluid">
           <div class="row mb-2">
-            <div class="col-sm-12">
+            <div class="col-sm-12 col-lg-12">
               <h2 class="m-0 text-dark">Registro de Ventas</h2>
             </div>
-            <div class="mt-2">
-              <div class="card card-info col-sm-12 pl-0 pr-0 col-md-10">
-                <div class="card-header">
-                  <div class="row">
-                    <div class="col d-flex align-items-center">
-                      <h3 class="card-title" style="font-weight: bold;">REGISTRO DE VENTA</h3>
-                    </div>
-                    <div class="col  d-flex justify-content-end">
-                        <form class="form-inline ml-3">
+            <!-- /.card-body -->
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="mt-2">
+                  <div class="card card-info col-sm-12 pl-0 pr-0 col-md-10 col-lg-8">
+                    <div class="card-header">
+                      <div class="row">
+                        <div class="col d-flex align-items-center">
+                          <h3 class="card-title" style="font-weight: bold;">REGISTRO DE VENTA</h3>
+                        </div>
+                        <div class="col  d-flex justify-content-end">
+                          <form class="form-inline ml-3">
                             <div class="input-group input-group-sm">
                               <input class="form-control form-control-navbar" type="search" placeholder="Ingrese Id de Venta" aria-label="buscar">
                               <div class="input-group-append">
@@ -156,72 +160,64 @@ scratch. This page gets rid of all links and provides the needed markup only.
                               </div>
                             </div>
                           </form>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <div class="row">
-                    <div class="col-sm-6">
-                      <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text"><i class="fas fa-calendar-day"></i></span>
                         </div>
-                        <label class="form-control">Fecha de Venta</label>
                       </div>
                     </div>
-                    <div class="col-sm-6">
-                        <div class="input-group">
-                          <div class="input-group-prepend">
-                            <span class="input-group-text"><i class="fas fa-id-badge"></i></span>
-                          </div>
-                          <label class="form-control">Identificacion Cliente</label>
-                        </div>
-                    </div> 
-                  </div>
-                  <div class="row">
-                    <div class="col-12 mt-3">
-                      <table class="table table-hover table-dark">
-                        <thead>
-                            <div class="colgrup-2">
-                                <tr class="text-center" >
-                                  <th scope="col-1">DETALLE VENTA</th>
-                                 
-                                </tr>
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text"><i class="fas fa-calendar-day"></i></span>
                             </div>
-                        </thead>
-                        <tbody>
-                          <tr class="text-center">
-                            <td>1</td>
-                            <td>POKER</td>
-                            <td>3</td>
-                            <td>BANDEJA</td>
-                            <td> $174.000</td>
-                            <td class="d-flex justify-content-center"><i class="fas fa-trash-alt btn btn-primary"></i></td>
-                          </tr>
-                          <tr class="text-center">
-                            <td>2</td>
-                            <td>AGUILA</td>
-                            <td>2</td>
-                            <td>BANDEJA</td>
-                            <td> $112.000</td>
-                            <td class="d-flex justify-content-center"><i class="fas fa-trash-alt btn btn-primary"></i></td>
-                          </tr>
-                          <tr class="text-center">
-                            <td>3</td>
-                            <td>Red Label</td>
-                            <td>1</td>
-                            <td>BOT</td>
-                            <td> $70.000</td>
-                            <td class="d-flex justify-content-center"><i class="fas fa-trash-alt btn btn-primary"></i></td>
-                          </tr>
-                        </tbody>
-                      </table>
+                            <label class="form-control">Fecha de Venta</label>
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="input-group">
+                              <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-id-badge"></i></span>
+                              </div>
+                              <label class="form-control">Identificacion Cliente</label>
+                            </div>
+                        </div> 
+                      </div>
+                      <div class="row">
+                        <div class="col-12 mt-3">
+                          <table class="table table-dark">
+                            <thead>
+                                <div>
+                                    <tr class="text-center" >
+                                      <th class="col-lg-6" >DETALLE VENTA</th>
+                                      <th >SUBTOTAL</th>
+                                      <th >TOTAL</th>
+                                    </tr>
+                                </div>
+                            </thead>
+                            <tbody>
+                              <tr class="text-center">
+                                <td>1</td>
+                                <td>POKER</td>
+                                <td>POKER</td>
+                              </tr>
+                              <tr class="text-center">
+                                <td>2</td>
+                                <td>AGUILA</td>
+                                <td>AGUILA</td>
+                              </tr>
+                              <tr class="text-center">
+                                <td>3</td>
+                                <td>Red Label</td>
+                                <td>1</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </div>
               </div>
             </div>
-            <!-- /.card-body -->
           </div>
         </div><!-- /.col -->
       </div><!-- /.row -->
