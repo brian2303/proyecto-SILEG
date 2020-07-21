@@ -82,6 +82,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
         </div>
         <div class="info">
           <a href="#" class="d-block">Andres Perez</a>
+          <p class="text-center" style="font-family: Roboto; color: white;" >Cliente</p>
         </div>
       </div>
 
@@ -161,7 +162,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     <div class="row">
                       <div class="col">
                         <div class="input-group mb-3">
-                          <select class="form-control" name="seleccion" id="seleccion">
+                          <select class="form-control" required name="seleccion" id="seleccion">
                                 <option value="1">Peticion</option> 
                                 <option value="2">Queja</option> 
                                 <option value="3">Reclamo</option>
@@ -178,7 +179,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     <div class="row">
                       <div class="col">
                         <div class="input-group mb-3">
-                          <input type="text" class="form-control" placeholder="titulo">
+                          <input type="text" class="form-control" required placeholder="titulo">  
                           <div class="input-group-append">
                             <div class="input-group-text">
                               <span class="fas fa-text-height"></span>
@@ -190,7 +191,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     <div class="row">
                      <div class="col">
                       <div class="input-group mb-3">
-                        <input type="date" class="form-control" placeholder="fecha limite">
+                        <input type="date" class="form-control" required placeholder="fecha limite">
                         <div class="input-group-append">
                           <div class="input-group-text">
                             <i class="fas fa-poll"></i>
@@ -203,7 +204,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     <div class="row">
                       <div class="col">
                       <div class="input-group mb-3">
-                        <textarea name="textarea" id="textarea" cols="145" rows="5" placeholder="descripcion"></textarea>
+                        <textarea name="textarea" id="textarea" cols="145" rows="5" required placeholder="descripcion"></textarea>
                         </div>
                       </div>
                     </div>
